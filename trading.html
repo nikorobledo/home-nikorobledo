@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trading Pro | Academia de Educación en Trading Profesional</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Aprende trading profesional. Formación en 6 mercados financieros: Forex, Binarias, Acciones, Índices, Criptomonedas y Materias Primas desde nivel básico hasta avanzado.">
+    <meta name="keywords" content="educacion trading, cursos de trading, aprender trading, formacion forex binarias, academias trading">
+    <meta name="author" content="Trading Pro">
+    <meta name="robots" content="index, follow">
+
+    <!-- Meta Pixel Code -->
+    <script>
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window, document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '1234567890123456'); 
+      fbq('track', 'PageView');
+    </script>
+    <noscript>
+      <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1234567890123456&ev=PageView&noscript=1"/>
+    </noscript>
+
+    <!-- Open Graph / WhatsApp Meta Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tradingpro.net/">
+    <meta property="og:title" content="Trading Pro - Educación Profesional en Trading">
+    <meta property="og:description" content="Aprende a operar en 6 mercados financieros con formación completa básica, intermedia y avanzada.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?q=80&w=1200&auto=format&fit=crop">
+    <meta property="og:locale" content="es">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            gold: '#F59E0B',
+                            goldLight: '#FBBF24',
+                            cyan: '#0284C7',
+                            cyanGlow: '#0EA5E9',
+                            darkBg: '#050B18',
+                            cardBg: '#0F172A',
+                            navyDark: '#0A192F',
+                            navyText: '#1E293B',
+                            navyHeading: '#0F172A'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Space Grotesk', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Google Fonts & FontAwesome -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        body {
+            background-color: #050B18;
+            color: #F8FAFC;
+            font-family: 'Inter', sans-serif;
+            overflow-x: hidden;
+        }
+        .glow-cyan {
+            box-shadow: 0 0 40px -5px rgba(56, 189, 248, 0.3);
+        }
+        .glow-yellow {
+            box-shadow: 0 10px 30px -5px rgba(245, 158, 11, 0.35);
+        }
+        .text-gradient-cyan {
+            background: linear-gradient(135deg, #FFFFFF 20%, #38BDF8 60%, #0EA5E9 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .glass-panel {
+            background: rgba(15, 23, 42, 0.75);
+            backdrop-filter: blur(14px);
+            border: 1px solid rgba(56, 189, 248, 0.15);
+        }
+        .pulse-whatsapp {
+            animation: pulse-border 2s infinite;
+        }
+        @keyframes pulse-border {
+            0% { box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.7); }
+            70% { box-shadow: 0 0 0 18px rgba(34, 197, 94, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(34, 197, 94, 0); }
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-sky-500 selection:text-white">
+
+    <!-- Navigation Header -->
+    <header class="border-b border-slate-800/80 bg-slate-950/90 backdrop-blur-md sticky top-0 z-40">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- Brand Logo -->
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-sky-400 to-blue-600 flex items-center justify-center text-black font-black text-xl shadow-lg shadow-sky-500/20">
+                    TP
+                </div>
+                <div>
+                    <span class="font-display font-bold text-xl tracking-tight text-white block leading-none">TRADING<span class="text-sky-400">PRO</span></span>
+                </div>
+            </div>
+
+            <!-- Trust Badge -->
+            <div class="hidden lg:flex items-center gap-6 text-xs text-gray-300 font-medium">
+                <div class="flex items-center gap-2 bg-slate-900/90 px-3.5 py-1.5 rounded-full border border-sky-500/30 text-sky-200">
+                    <i class="fa-solid fa-graduation-cap text-sky-400 text-sm"></i>
+                    <span>Formación Integral en 6 Mercados</span>
+                </div>
+            </div>
+
+            <!-- WhatsApp Header CTA -->
+            <div class="hidden">
+            </div>
+        </div>
+    </header>
+
+    <!-- ABOVE THE FOLD / HERO SECTION -->
+    <section class="relative pt-12 pb-16 lg:pt-20 lg:pb-24 overflow-hidden">
+        <!-- Background Ambient Glow -->
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-sky-500/10 blur-[150px] rounded-full pointer-events-none"></div>
+        <div class="absolute top-1/3 right-10 w-[400px] h-[400px] bg-blue-600/15 blur-[140px] rounded-full pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Hero Left Column -->
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    
+                    <!-- Pre-Headline Tag -->
+                    <div class="hidden">
+                    </div>
+
+                    <!-- Main Dynamic Headline -->
+                    <h1 class="text-3xl sm:text-5xl lg:text-6xl font-black font-display tracking-tight text-white leading-tight">
+                        Aprende Trading Profesional con Educación Coherente.
+                    </h1>
+
+                    <!-- Subheadline -->
+                    <p class="text-slate-300 text-base sm:text-lg font-normal leading-relaxed max-w-2xl mx-auto lg:mx-0">
+                        Desarrolla la habilidad técnica, mentalidad de éxito y estrategia profesional para operar desde cero hasta nivel avanzado.
+                    </p>
+
+                    <!-- Key Pillars -->
+                    <div class="grid grid-cols-3 gap-3 pt-2 max-w-lg mx-auto lg:mx-0 text-left">
+                        <div class="glass-panel p-3.5 rounded-xl border border-sky-500/20 text-center sm:text-left">
+                            <div class="text-sky-400 font-extrabold text-lg sm:text-xl font-display">6 Mercados</div>
+                            <div class="text-[11px] text-gray-300 font-medium leading-tight">Formación Financiera Integral</div>
+                        </div>
+                        <div class="glass-panel p-3.5 rounded-xl border border-sky-500/20 text-center sm:text-left">
+                            <div class="text-emerald-400 font-extrabold text-lg sm:text-xl font-display">Paso a Paso</div>
+                            <div class="text-[11px] text-gray-300 font-medium leading-tight">Metodología Desde Cero</div>
+                        </div>
+                        <div class="glass-panel p-3.5 rounded-xl border border-sky-500/20 text-center sm:text-left">
+                            <div class="text-blue-400 font-extrabold text-lg sm:text-xl font-display">En Vivo</div>
+                            <div class="text-[11px] text-gray-300 font-medium leading-tight">Asesorías Continuas Diarias</div>
+                        </div>
+                    </div>
+
+                    <!-- CTA Buttons -->
+                    <div class="pt-4 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+                        <a href="https://wa.me/56951742785?text=Hola%20niko,%20quiero%20empezar%20aprender%20de%20trading,%20Mi%20nombre%20es" target="_blank" rel="noopener" class="w-full sm:w-auto bg-gradient-to-r from-sky-400 via-blue-500 to-blue-600 hover:brightness-110 text-white font-black text-base px-8 py-4 rounded-xl transition duration-200 transform hover:-translate-y-0.5 shadow-xl shadow-sky-500/25 text-center flex items-center justify-center gap-3">
+                            <i class="fa-brands fa-whatsapp text-2xl"></i>
+                            <span>EMPEZAR A APRENDER TRADING</span>
+                        </a>
+
+                        <a href="#planes" class="w-full sm:w-auto glass-panel hover:bg-slate-800 text-white font-bold text-base px-6 py-4 rounded-xl border border-sky-500/30 transition duration-200 text-center flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-graduation-cap text-sky-400"></i>
+                            <span>Ver Planes de Estudio</span>
+                        </a>
+                    </div>
+
+                </div>
+
+                <!-- Hero Right Column: Community Result Showcase -->
+                <div class="lg:col-span-5 relative">
+                    <div class="glass-panel p-6 sm:p-8 rounded-3xl border border-sky-500/30 shadow-2xl relative z-10 glow-cyan bg-slate-900/90 text-slate-200">
+                        
+                        <p class="mb-4 text-lg font-medium text-white">Quizás el Trading te ha llamado la atención durante mucho tiempo...</p>
+                        <ul class="space-y-2 mb-4 text-sm font-medium">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-chart-line text-sky-400"></i> Has visto gráficos.</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-users text-sky-400"></i> Personas hablando de mercados.</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-chess-knight text-sky-400"></i> Estrategias.</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-chart-pie text-sky-400"></i> Indicadores.</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-laptop-code text-sky-400"></i> Operaciones.</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check-double text-sky-400"></i> Resultados.</li>
+                        </ul>
+                        <p class="mb-4 text-sm">Y quizás también has pensado:<br><span class="italic text-sky-300 font-semibold">“¿Será realmente posible aprender esto?”</span></p>
+                        <p class="mb-4 text-lg font-bold text-white">La respuesta es sí.</p>
+                        <div class="bg-slate-800/60 p-4 rounded-xl border border-slate-700/60 text-sm leading-relaxed text-slate-300 border-l-4 border-l-sky-400">
+                            Pero aprender Trading no significa aprender a predecir el mercado.<br>
+                            <span class="text-white font-bold mt-1 block">Significa aprender a comprenderlo, analizarlo y tomar decisiones dentro de un marco de trabajo.</span>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- THE 95% PROBLEM SECTION (WHITE BACKGROUND WITH DARK BLUE TEXT) -->
+    <section class="py-20 bg-white text-slate-900 relative shadow-inner">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="max-w-3xl mx-auto text-center space-y-4 mb-16">
+                <span class="inline-block px-3.5 py-1.5 rounded-full bg-blue-100 border border-blue-200 text-blue-900 font-black text-xs uppercase tracking-widest">
+                    ¿POR QUÉ EL 95% FRACASA EN TRADING?
+                </span>
+                <h2 class="text-3xl sm:text-5xl font-black font-display text-blue-950 tracking-tight">
+                    Las Dos Trampas del Aprendizaje Informal
+                </h2>
+                <p class="text-blue-900/80 text-base sm:text-lg font-medium leading-relaxed">
+                    En el trading el problema no es la falta de información, sino la falta de estructura educacional profesional:
+                </p>
+            </div>
+
+            <!-- Comparison Cards Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                
+                <!-- Trap 1: Ignorance -->
+                <div class="bg-slate-50 p-8 rounded-3xl border-2 border-red-200 relative overflow-hidden shadow-lg hover:shadow-xl transition duration-300">
+                    <div class="w-14 h-14 bg-red-100 rounded-2xl flex items-center justify-center text-red-600 text-2xl font-bold mb-6">
+                        <i class="fa-solid fa-triangle-exclamation"></i>
+                    </div>
+                    <h3 class="text-2xl font-black font-display text-blue-950 mb-3">1. Ignorancia Absoluta</h3>
+                    <p class="text-blue-900/90 text-sm sm:text-base leading-relaxed mb-6 font-normal">
+                        No puedes entrar al mercado sin entender las bases ni la teoría técnica necesaria. El trading es una profesión que requiere estudio y práctica antes de operar.
+                    </p>
+                    <div class="p-3.5 bg-red-100/70 rounded-xl text-xs sm:text-sm font-bold text-red-800 flex items-center gap-2 border border-red-200">
+                        <i class="fa-solid fa-circle-xmark text-red-600 text-base shrink-0"></i>
+                        <span>Resultado: Frustración por falta de bases sólidas.</span>
+                    </div>
+                </div>
+
+                <!-- Trap 2: Illusion of Knowledge -->
+                <div class="bg-slate-50 p-8 rounded-3xl border-2 border-sky-300 relative overflow-hidden shadow-lg hover:shadow-xl transition duration-300">
+                    <div class="w-14 h-14 bg-sky-100 rounded-2xl flex items-center justify-center text-sky-600 text-2xl font-bold mb-6">
+                        <i class="fa-solid fa-book-skull"></i>
+                    </div>
+                    <h3 class="text-2xl font-black font-display text-blue-950 mb-3">2. La Ilusión del Conocimiento</h3>
+                    <p class="text-blue-900/90 text-sm sm:text-base leading-relaxed mb-6 font-normal">
+                        Mirar videos desordenados en internet, sin una ruta de aprendizaje clara. Creer que se sabe operar por ver tutoriales sueltos genera confusión y malas prácticas difíciles de corregir.
+                    </p>
+                    <div class="p-3.5 bg-sky-100/80 rounded-xl text-xs sm:text-sm font-bold text-blue-900 flex items-center gap-2 border border-sky-200">
+                        <i class="fa-solid fa-triangle-exclamation text-sky-600 text-base shrink-0"></i>
+                        <span>Resultado: Pérdida de tiempo y vacíos de conocimiento.</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Solution Callout Banner -->
+            <div class="hidden">
+            </div>
+
+        </div>
+    </section>
+
+    <!-- REALIDAD DEL MERCADO (NUEVA SECCIÓN 4) -->
+    <section class="py-20 bg-slate-100 text-slate-900 relative border-t-2 border-slate-200 shadow-inner">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-4xl mx-auto space-y-4 mb-16 text-center">
+                <span class="inline-block px-3.5 py-1.5 rounded-full bg-blue-200 border border-blue-300 text-blue-950 font-black text-xs uppercase tracking-widest">
+                    REALIDAD DEL MERCADO
+                </span>
+                <h2 class="text-3xl sm:text-4xl font-black font-display text-blue-950 tracking-tight">
+                    El Trading no debería presentarse como dinero fácil
+                </h2>
+                <p class="text-blue-900/80 text-base sm:text-lg font-medium leading-relaxed">
+                    Porque no existen resultados garantizados. Y ninguna formación puede eliminar el riesgo del mercado. Lo que sí puedes hacer es educarte, prepararte y desarrollar mejores herramientas para tomar decisiones.
+                </p>
+            </div>
+
+            <div class="bg-white p-8 md:p-12 rounded-3xl border-2 border-slate-200 shadow-xl max-w-5xl mx-auto">
+                <h3 class="text-2xl sm:text-3xl font-black font-display text-blue-950 mb-6 text-center">Entonces... ¿Cómo funciona el Trading?</h3>
+                <p class="text-slate-700 mb-10 text-center md:text-lg max-w-2xl mx-auto font-medium">
+                    El Trading consiste en participar en los mercados financieros buscando aprovechar movimientos de precio mediante diferentes estrategias.
+                </p>
+                
+                <div class="flex flex-col md:flex-row justify-center items-center gap-4 mb-10 text-sm font-bold text-blue-900">
+                    <span class="bg-blue-50 px-5 py-3 rounded-xl border border-blue-200 shadow-sm w-full md:w-auto text-center">Analizar</span>
+                    <i class="fa-solid fa-arrow-down md:fa-arrow-right text-sky-500 text-lg"></i>
+                    <span class="bg-blue-50 px-5 py-3 rounded-xl border border-blue-200 shadow-sm w-full md:w-auto text-center">Planificar</span>
+                    <i class="fa-solid fa-arrow-down md:fa-arrow-right text-sky-500 text-lg"></i>
+                    <span class="bg-blue-50 px-5 py-3 rounded-xl border border-blue-200 shadow-sm w-full md:w-auto text-center">Ejecutar</span>
+                    <i class="fa-solid fa-arrow-down md:fa-arrow-right text-sky-500 text-lg"></i>
+                    <span class="bg-blue-50 px-5 py-3 rounded-xl border border-blue-200 shadow-sm w-full md:w-auto text-center">Gestionar el riesgo</span>
+                    <i class="fa-solid fa-arrow-down md:fa-arrow-right text-sky-500 text-lg"></i>
+                    <span class="bg-blue-50 px-5 py-3 rounded-xl border border-blue-200 shadow-sm w-full md:w-auto text-center">Evaluar</span>
+                </div>
+
+                <div class="bg-slate-900 text-white p-8 rounded-2xl shadow-lg border border-sky-500/30">
+                    <p class="text-sky-300 font-bold mb-6 text-center text-lg">El trader no sabe con certeza qué hará el mercado.<br><span class="text-white font-medium text-base mt-2 block">Por eso una parte fundamental del aprendizaje consiste en comprender:</span></p>
+                    <ul class="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-4 text-slate-200 max-w-2xl mx-auto font-medium">
+                        <li class="flex items-center gap-3"><i class="fa-solid fa-check-circle text-emerald-400"></i> cómo funcionan los mercados.</li>
+                        <li class="flex items-center gap-3"><i class="fa-solid fa-check-circle text-emerald-400"></i> cómo analizar diferentes escenarios.</li>
+                        <li class="flex items-center gap-3"><i class="fa-solid fa-check-circle text-emerald-400"></i> cómo establecer una estrategia.</li>
+                        <li class="flex items-center gap-3"><i class="fa-solid fa-check-circle text-emerald-400"></i> cómo gestionar el riesgo.</li>
+                        <li class="flex items-center gap-3"><i class="fa-solid fa-check-circle text-emerald-400"></i> cómo controlar las emociones.</li>
+                        <li class="flex items-center gap-3"><i class="fa-solid fa-check-circle text-emerald-400"></i> cómo evaluar las operaciones.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PERFIL DEL ESTUDIANTE (NUEVA SECCIÓN 5) -->
+    <section class="py-20 bg-slate-950 relative border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+                <span class="bg-sky-500/20 text-sky-300 border border-sky-500/30 text-xs font-black px-4 py-1.5 rounded-full uppercase tracking-widest">
+                    PERFIL DEL ESTUDIANTE
+                </span>
+                <h2 class="text-3xl sm:text-5xl font-black font-display text-white tracking-tight">
+                    ¿Para quién es esta formación?
+                </h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                <!-- Puede ser para ti -->
+                <div class="glass-panel p-8 rounded-3xl border border-emerald-500/30 bg-emerald-950/20 shadow-xl shadow-emerald-900/10 hover:border-emerald-500/60 transition">
+                    <h3 class="text-2xl font-black font-display text-emerald-400 mb-6 flex items-center gap-3">
+                        <i class="fa-solid fa-circle-check text-3xl"></i> Puede ser para ti si:
+                    </h3>
+                    <ul class="space-y-4 text-slate-300 font-medium">
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-emerald-500 mt-1"></i> Nunca has hecho Trading y quieres comenzar correctamente.</li>
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-emerald-500 mt-1"></i> Ya has intentado aprender por tu cuenta.</li>
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-emerald-500 mt-1"></i> Tienes demasiada información y poca estructura.</li>
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-emerald-500 mt-1"></i> Quieres comprender mejor los mercados.</li>
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-emerald-500 mt-1"></i> Estás dispuesto a estudiar y practicar.</li>
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-emerald-500 mt-1"></i> Quieres desarrollar una habilidad financiera de manera responsable.</li>
+                    </ul>
+                </div>
+
+                <!-- No es para ti -->
+                <div class="glass-panel p-8 rounded-3xl border border-red-500/30 bg-red-950/20 shadow-xl shadow-red-900/10 hover:border-red-500/60 transition">
+                    <h3 class="text-2xl font-black font-display text-red-400 mb-6 flex items-center gap-3">
+                        <i class="fa-solid fa-circle-xmark text-3xl"></i> No es para ti si:
+                    </h3>
+                    <ul class="space-y-4 text-slate-300 font-medium">
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-xmark text-red-500 mt-1 text-lg"></i> Buscas ganancias rápidas.</li>
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-xmark text-red-500 mt-1 text-lg"></i> Esperas resultados garantizados.</li>
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-xmark text-red-500 mt-1 text-lg"></i> Quieres una estrategia que nunca falle.</li>
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-xmark text-red-500 mt-1 text-lg"></i> No estás dispuesto a asumir que el Trading implica riesgo.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BENEFICIOS EXCLUSIVOS DE TRADING -->
+    <section class="py-20 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+                <span class="bg-sky-500/20 text-sky-300 border border-sky-500/30 text-xs font-black px-3.5 py-1.5 rounded-full uppercase tracking-widest">
+                    METODOLOGÍA DE ESTUDIO
+                </span>
+                <h2 class="text-3xl sm:text-5xl font-black font-display text-white uppercase tracking-tight">
+                    Beneficios Exclusivos <span class="text-sky-400">de Trading</span>
+                </h2>
+                <p class="text-gray-300 text-sm sm:text-base">
+                    Todo lo que necesitas para construir una formación sólida en el mercado financiero con acompañamiento constante.
+                </p>
+            </div>
+
+            <!-- List of Benefits Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+                
+                <div class="glass-panel p-6 rounded-2xl border border-yellow-500/30 bg-gradient-to-b from-slate-900 to-amber-950/20 space-y-3">
+                    <div class="w-10 h-10 rounded-xl bg-amber-500/20 text-yellow-400 flex items-center justify-center text-xl font-bold">
+                        <i class="fa-solid fa-award"></i>
+                    </div>
+                    <h3 class="text-white font-bold text-base">Triple Certificación</h3>
+                    <p class="text-gray-300 text-xs leading-relaxed">Exclusivo del Plan Anual (360 días). Certifica tus competencias académicas en trading.</p>
+                </div>
+
+                <div class="glass-panel p-6 rounded-2xl border border-sky-500/20 space-y-3">
+                    <div class="w-10 h-10 rounded-xl bg-sky-500/10 text-sky-400 flex items-center justify-center text-xl font-bold">
+                        <i class="fa-solid fa-globe"></i>
+                    </div>
+                    <h3 class="text-white font-bold text-base">Educación en 6 Mercados Financieros</h3>
+                    <p class="text-gray-300 text-xs leading-relaxed">Aprende la estructura de <strong>Forex, Binarias, Acciones, Índices, Criptomonedas y Materias Primas</strong>.</p>
+                </div>
+
+                <div class="glass-panel p-6 rounded-2xl border border-sky-500/20 space-y-3">
+                    <div class="w-10 h-10 rounded-xl bg-sky-500/10 text-sky-400 flex items-center justify-center text-xl font-bold">
+                        <i class="fa-solid fa-chart-simple"></i>
+                    </div>
+                    <h3 class="text-white font-bold text-base">Formación Completa</h3>
+                    <p class="text-gray-300 text-xs leading-relaxed">Temario gradual estructurado en Nivel Básico, Intermedio y Avanzado.</p>
+                </div>
+
+                <div class="glass-panel p-6 rounded-2xl border border-sky-500/20 space-y-3">
+                    <div class="w-10 h-10 rounded-xl bg-sky-500/10 text-sky-400 flex items-center justify-center text-xl font-bold">
+                        <i class="fa-solid fa-circle-play"></i>
+                    </div>
+                    <h3 class="text-white font-bold text-base">Clases Grabadas y Clases en Vivo</h3>
+                    <p class="text-gray-300 text-xs leading-relaxed">Aprende a operar en todos los mercados a tu propio ritmo con acceso flexible.</p>
+                </div>
+
+                <div class="glass-panel p-6 rounded-2xl border border-sky-500/20 space-y-3">
+                    <div class="w-10 h-10 rounded-xl bg-sky-500/10 text-sky-400 flex items-center justify-center text-xl font-bold">
+                        <i class="fa-solid fa-headset"></i>
+                    </div>
+                    <h3 class="text-white font-bold text-base">Asesorías en Vivo (8 a 10 hrs Diarias)</h3>
+                    <p class="text-gray-300 text-xs leading-relaxed">Resuelve dudas directamente con educadores experimentados durante el día.</p>
+                </div>
+
+                <div class="glass-panel p-6 rounded-2xl border border-sky-500/20 space-y-3">
+                    <div class="w-10 h-10 rounded-xl bg-sky-500/10 text-sky-400 flex items-center justify-center text-xl font-bold">
+                        <i class="fa-solid fa-book"></i>
+                    </div>
+                    <h3 class="text-white font-bold text-base">Guía Paso a Paso</h3>
+                    <p class="text-gray-300 text-xs leading-relaxed">Diseñado para comenzar totalmente desde cero sin conocimientos previos.</p>
+                </div>
+
+                <div class="glass-panel p-6 rounded-2xl border border-sky-500/20 space-y-3">
+                    <div class="w-10 h-10 rounded-xl bg-sky-500/10 text-sky-400 flex items-center justify-center text-xl font-bold">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </div>
+                    <h3 class="text-white font-bold text-base">Comunidad Privada de WhatsApp</h3>
+                    <p class="text-gray-300 text-xs leading-relaxed">Contacto e interacción continua con otros estudiantes y mentores.</p>
+                </div>
+
+                <div class="glass-panel p-6 rounded-2xl border border-sky-500/20 space-y-3">
+                    <div class="w-10 h-10 rounded-xl bg-sky-500/10 text-sky-400 flex items-center justify-center text-xl font-bold">
+                        <i class="fa-solid fa-user-group"></i>
+                    </div>
+                    <h3 class="text-white font-bold text-base">Acompañamiento Presencial</h3>
+                    <p class="text-gray-300 text-xs leading-relaxed">Sesiones y encuentros dedicados de acompañamiento académico directo.</p>
+                </div>
+
+                <div class="glass-panel p-6 rounded-2xl border border-sky-500/20 space-y-3">
+                    <div class="w-10 h-10 rounded-xl bg-sky-500/10 text-sky-400 flex items-center justify-center text-xl font-bold">
+                        <i class="fa-solid fa-brain"></i>
+                    </div>
+                    <h3 class="text-white font-bold text-base">Mentorías de Desarrollo Personal</h3>
+                    <p class="text-gray-300 text-xs leading-relaxed">Fortalece tu psicología y desarrolla una mentalidad de éxito consistente.</p>
+                </div>
+
+                <!-- NÚCLEO DEL PLAN DE ESTUDIOS AÑADIDO (SECCIÓN 6) -->
+                <div class="glass-panel p-6 sm:p-8 rounded-2xl border border-emerald-500/30 space-y-3 lg:col-span-3 mt-2 bg-emerald-900/20 shadow-lg shadow-emerald-900/10">
+                    <h3 class="text-emerald-400 font-bold text-lg mb-6 text-center tracking-wide"><i class="fa-solid fa-layer-group mr-2"></i> Núcleo del Plan de Estudios</h3>
+                    <ul class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 text-gray-300 text-sm font-medium">
+                        <li class="flex items-center gap-3"><i class="fa-solid fa-check text-emerald-500 bg-emerald-500/10 p-1 rounded-full"></i> Fundamentos de los mercados</li>
+                        <li class="flex items-center gap-3"><i class="fa-solid fa-check text-emerald-500 bg-emerald-500/10 p-1 rounded-full"></i> Lectura y análisis de gráficos</li>
+                        <li class="flex items-center gap-3"><i class="fa-solid fa-check text-emerald-500 bg-emerald-500/10 p-1 rounded-full"></i> Gestión del riesgo</li>
+                        <li class="flex items-center gap-3"><i class="fa-solid fa-check text-emerald-500 bg-emerald-500/10 p-1 rounded-full"></i> Gestión de operaciones</li>
+                        <li class="flex items-center gap-3"><i class="fa-solid fa-check text-emerald-500 bg-emerald-500/10 p-1 rounded-full"></i> Análisis técnico</li>
+                        <li class="flex items-center gap-3"><i class="fa-solid fa-check text-emerald-500 bg-emerald-500/10 p-1 rounded-full"></i> Desarrollo de estrategias</li>
+                        <li class="flex items-center gap-3"><i class="fa-solid fa-check text-emerald-500 bg-emerald-500/10 p-1 rounded-full"></i> Psicología y disciplina</li>
+                        <li class="flex items-center gap-3"><i class="fa-solid fa-check text-emerald-500 bg-emerald-500/10 p-1 rounded-full"></i> Gestión del capital</li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- PLANS SECTION (WHITE BACKGROUND WITH DARK BLUE TEXT FOR CONTRAST) -->
+    <section id="planes" class="py-20 bg-slate-100 text-slate-900 relative border-t-2 border-slate-200 shadow-inner">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+                <h2 class="text-3xl sm:text-5xl font-black font-display text-blue-950 mt-4">
+                    ¿Cómo puedes comenzar?
+                </h2>
+            </div>
+
+            <!-- Cards Grid for 3 Plans -->
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-stretch">
+                
+                <!-- Plan 1: 90 Días -->
+                <div class="bg-white rounded-3xl border-2 border-slate-200 p-8 flex flex-col justify-between hover:border-sky-400 shadow-md hover:shadow-xl transition duration-300">
+                    <div class="space-y-6">
+                        <div class="border-b border-slate-200 pb-5">
+                            <span class="text-xs font-black text-slate-500 uppercase tracking-widest block mb-1">FORMACIÓN EXPRESS 90 DÍAS</span>
+                            <h3 class="text-3xl font-black font-display text-blue-950">Plan 90 Días</h3>
+                        </div>
+
+                        <ul class="space-y-3.5 text-xs text-slate-700 font-medium">
+                            <li class="flex items-start gap-2.5">
+                                <i class="fa-solid fa-circle-check text-emerald-600 text-base mt-0.5"></i>
+                                <span>Educación en análisis técnico.</span>
+                            </li>
+                            <li class="flex items-start gap-2.5">
+                                <i class="fa-solid fa-circle-check text-emerald-600 text-base mt-0.5"></i>
+                                <span>Formación completa: Nivel básico, intermedio y avanzado.</span>
+                            </li>
+                            <li class="flex items-start gap-2.5">
+                                <i class="fa-solid fa-circle-check text-emerald-600 text-base mt-0.5"></i>
+                                <span>Clases en vivo y grabadas a tu disposición.</span>
+                            </li>
+                            <li class="flex items-start gap-2.5">
+                                <i class="fa-solid fa-circle-check text-emerald-600 text-base mt-0.5"></i>
+                                <span>Guía paso a paso para comenzar desde cero.</span>
+                            </li>
+                            <li class="flex items-start gap-2.5">
+                                <i class="fa-solid fa-circle-check text-emerald-600 text-base mt-0.5"></i>
+                                <span>Comunidad privada de WhatsApp.</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="pt-8">
+                        <a href="https://wa.me/56951742785?text=Hola%20Niko%2C%20quiero%20mas%20informaci%C3%B3n%20del%20Plan%20de%2090%20d%C3%ADas%20de%20Trading" target="_blank" rel="noopener" class="w-full bg-slate-900 hover:bg-slate-800 text-white font-extrabold text-sm py-4 rounded-xl transition duration-200 flex items-center justify-center gap-2 shadow-md">
+                            <i class="fa-brands fa-whatsapp text-emerald-400 text-lg"></i>
+                            <span>Quiero el plan de 90 días de Trading</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Plan 2: 180 Días -->
+                <div class="bg-white rounded-3xl border-2 border-sky-400 p-8 flex flex-col justify-between shadow-lg hover:shadow-2xl transition duration-300 relative">
+                    <div class="space-y-6">
+                        <div class="border-b border-slate-200 pb-5">
+                            <span class="text-xs font-black text-sky-600 uppercase tracking-widest block mb-1">FORMACIÓN CONTÍNUA 180 DÍAS</span>
+                            <h3 class="text-3xl font-black font-display text-blue-950">Plan 180 Días</h3>
+                        </div>
+
+                        <ul class="space-y-3.5 text-xs text-slate-700 font-medium">
+                            <li class="flex items-start gap-2.5 font-bold text-sky-600">
+                                <i class="fa-solid fa-circle-plus text-sky-600 text-base mt-0.5"></i>
+                                <span>Todo el Plan 90 Días +</span>
+                            </li>
+                            <li class="flex items-start gap-2.5">
+                                <i class="fa-solid fa-circle-check text-emerald-600 text-base mt-0.5"></i>
+                                <span>Sesión especial de Copytrading.</span>
+                            </li>
+                            <li class="flex items-start gap-2.5">
+                                <i class="fa-solid fa-circle-check text-emerald-600 text-base mt-0.5"></i>
+                                <span>Acceso a scanners y apps.</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="pt-8">
+                        <a href="https://wa.me/56951742785?text=Hola%20Niko%2C%20quiero%20mas%20informaci%C3%B3n%20del%20Plan%20de%20180%20d%C3%ADas%20de%20Trading" target="_blank" rel="noopener" class="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-extrabold text-sm py-4 rounded-xl transition duration-200 flex items-center justify-center gap-2 shadow-lg shadow-emerald-600/30">
+                            <i class="fa-brands fa-whatsapp text-lg"></i>
+                            <span>Quiero el plan de 180 días de Trading</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Plan 3: 360 Días (ANUAL - Destacado en Dorado) -->
+                <div class="bg-amber-50/50 rounded-3xl border-2 border-amber-400 p-8 flex flex-col justify-between relative shadow-xl hover:shadow-2xl transition duration-300 glow-yellow">
+                    
+                    <div class="absolute -top-3.5 right-6 bg-amber-500 text-black text-[11px] font-black px-3.5 py-1 rounded-full uppercase tracking-wider shadow-md">
+                        RECOMENDADO • MÁS COMPLETO
+                    </div>
+
+                    <div class="space-y-6">
+                        <div class="border-b border-amber-200 pb-5">
+                            <span class="text-xs font-black text-amber-700 uppercase tracking-widest block mb-1">PLAN PROFESIONAL 360 DÍAS</span>
+                            <h3 class="text-3xl font-black font-display text-blue-950">Plan 360 Días</h3>
+                        </div>
+
+                        <!-- Triple Certification Banner -->
+                        <div class="bg-amber-100 border border-amber-300 p-3.5 rounded-2xl flex items-center gap-3">
+                            <i class="fa-solid fa-trophy text-amber-600 text-2xl shrink-0"></i>
+                            <div>
+                                <span class="text-xs font-black text-blue-950 block">TRIPLE CERTIFICACIÓN</span>
+                                <span class="text-[11px] text-amber-900 font-medium">Exclusivo de este plan de 1 año</span>
+                            </div>
+                        </div>
+
+                        <ul class="space-y-3.5 text-xs text-slate-800 font-medium">
+                            <li class="flex items-start gap-2.5 font-bold text-amber-900">
+                                <i class="fa-solid fa-circle-plus text-amber-600 text-base mt-0.5"></i>
+                                <span>Todo el Plan 180 Días +</span>
+                            </li>
+                            <li class="flex items-start gap-2.5">
+                                <i class="fa-solid fa-circle-check text-emerald-600 text-base mt-0.5"></i>
+                                <span>Acceso completo a 6 mercados financieros.</span>
+                            </li>
+                            <li class="flex items-start gap-2.5">
+                                <i class="fa-solid fa-circle-check text-emerald-600 text-base mt-0.5"></i>
+                                <span>Acompañamiento presencial y virtual.</span>
+                            </li>
+                            <li class="flex items-start gap-2.5">
+                                <i class="fa-solid fa-circle-check text-emerald-600 text-base mt-0.5"></i>
+                                <span>Mentorías de desarrollo personal y mentalidad de éxito.</span>
+                            </li>
+                            <li class="flex items-start gap-2.5 font-bold text-amber-900">
+                                <i class="fa-solid fa-award text-amber-600 text-base mt-0.5"></i>
+                                <span>Opción a Triple Certificación de Trading.</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Yellow Button for 360-day plan -->
+                    <div class="pt-8">
+                        <a href="https://wa.me/56951742785?text=Hola%20Niko%2C%20quiero%20mas%20informaci%C3%B3n%20del%20Plan%20de%20360%20dias%20de%20Trading" target="_blank" rel="noopener" class="w-full bg-amber-400 hover:bg-amber-300 text-black font-black text-sm py-4 rounded-xl transition duration-200 flex items-center justify-center gap-2 shadow-xl shadow-amber-500/20">
+                            <i class="fa-brands fa-whatsapp text-lg"></i>
+                            <span>Quiero el plan de 360 días de Trading</span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- COMMUNITY RESULTS GALLERY (MOVED TO THE END - SECTION 8) -->
+    <section class="py-20 bg-slate-950 relative border-y border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+                <span class="bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 text-xs font-black px-4 py-1.5 rounded-full uppercase tracking-widest">
+                    <i class="fa-solid fa-comments mr-1.5"></i> PRUEBA SOCIAL EN VIVO
+                </span>
+                <h2 class="text-3xl sm:text-5xl font-black font-display text-white tracking-tight">
+                    Resultados Reales de Nuestra Comunidad VIP
+                </h2>
+                <p class="text-gray-300 text-sm sm:text-base">
+                    Estudiantes aplicando el conocimiento, compartiendo sus operaciones, retiros exitosos y avances semanales.
+                </p>
+            </div>
+
+            <!-- Grid of 6 Image Proofs -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+                
+                <!-- Proof 1 -->
+                <div class="glass-panel rounded-2xl overflow-hidden border border-slate-800 hover:border-emerald-500/50 transition group cursor-pointer bg-slate-900/80 flex flex-col justify-between" onclick="openImageModal('WhatsApp Image 2026-08-17 at 12.00.36 (1).jpeg', 'Alejandro - Ganancias de $723 USD en la semana')">
+                    <div class="p-4 border-b border-slate-800 flex justify-between items-center bg-slate-950/60">
+                        <span class="font-bold text-white text-xs flex items-center gap-2">
+                            <i class="fa-solid fa-circle-check text-emerald-400"></i> Alejandro
+                        </span>
+                        <span class="text-[11px] bg-emerald-500/20 text-emerald-300 px-2.5 py-0.5 rounded-full font-bold">
+                            +$723.50 USD
+                        </span>
+                    </div>
+                    <div class="relative overflow-hidden bg-black">
+                        <img src="WhatsApp Image 2026-08-17 at 12.00.36 (1).jpeg" alt="Resultado Alejandro $723 USD" class="w-full h-80 object-cover object-top group-hover:scale-105 transition duration-300">
+                        <div class="absolute inset-0 bg-slate-950/20 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+                            <span class="bg-sky-500 text-black font-extrabold text-xs px-3 py-1.5 rounded-lg shadow-lg">
+                                <i class="fa-solid fa-magnifying-glass-plus mr-1"></i> Ampliar Imagen
+                            </span>
+                        </div>
+                    </div>
+                    <div class="p-3.5 bg-slate-900/90 text-[12px] text-slate-300 font-medium">
+                        "Con ganancias de 723 dólares, cerrando una semana muy positiva 📈💪"
+                    </div>
+                </div>
+
+                <!-- Proof 2 -->
+                <div class="glass-panel rounded-2xl overflow-hidden border border-slate-800 hover:border-emerald-500/50 transition group cursor-pointer bg-slate-900/80 flex flex-col justify-between" onclick="openImageModal('WhatsApp Image 2026-08-17 at 12.00.36.jpeg', 'Alejandro - $1,024 USD en el Oro')">
+                    <div class="p-4 border-b border-slate-800 flex justify-between items-center bg-slate-950/60">
+                        <span class="font-bold text-white text-xs flex items-center gap-2">
+                            <i class="fa-solid fa-circle-check text-emerald-400"></i> Alejandro
+                        </span>
+                        <span class="text-[11px] bg-emerald-500/20 text-emerald-300 px-2.5 py-0.5 rounded-full font-bold">
+                            +$1,024.70 USD
+                        </span>
+                    </div>
+                    <div class="relative overflow-hidden bg-black">
+                        <img src="WhatsApp Image 2026-08-17 at 12.00.36.jpeg" alt="Resultado Alejandro $1,024 USD" class="w-full h-80 object-cover object-top group-hover:scale-105 transition duration-300">
+                        <div class="absolute inset-0 bg-slate-950/20 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+                            <span class="bg-sky-500 text-black font-extrabold text-xs px-3 py-1.5 rounded-lg shadow-lg">
+                                <i class="fa-solid fa-magnifying-glass-plus mr-1"></i> Ampliar Imagen
+                            </span>
+                        </div>
+                    </div>
+                    <div class="p-3.5 bg-slate-900/90 text-[12px] text-slate-300 font-medium">
+                        "Asegurando ganancias en el orito con 1024 dólares... Realmente haber aprendido esta habilidad del trading es genial 🙂"
+                    </div>
+                </div>
+
+                <!-- Proof 3 -->
+                <div class="glass-panel rounded-2xl overflow-hidden border border-slate-800 hover:border-emerald-500/50 transition group cursor-pointer bg-slate-900/80 flex flex-col justify-between" onclick="openImageModal('WhatsApp Image 2026-08-17 at 12.00.37 (1).jpeg', 'Fernando Valentino - Fondeo 60k con +2%')">
+                    <div class="p-4 border-b border-slate-800 flex justify-between items-center bg-slate-950/60">
+                        <span class="font-bold text-white text-xs flex items-center gap-2">
+                            <i class="fa-solid fa-circle-check text-emerald-400"></i> Fernando Valentino
+                        </span>
+                        <span class="text-[11px] bg-emerald-500/20 text-emerald-300 px-2.5 py-0.5 rounded-full font-bold">
+                            +$1,456.38 USD
+                        </span>
+                    </div>
+                    <div class="relative overflow-hidden bg-black">
+                        <img src="WhatsApp Image 2026-08-17 at 12.00.37 (1).jpeg" alt="Resultado Fernando $1,456 USD" class="w-full h-80 object-cover object-top group-hover:scale-105 transition duration-300">
+                        <div class="absolute inset-0 bg-slate-950/20 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+                            <span class="bg-sky-500 text-black font-extrabold text-xs px-3 py-1.5 rounded-lg shadow-lg">
+                                <i class="fa-solid fa-magnifying-glass-plus mr-1"></i> Ampliar Imagen
+                            </span>
+                        </div>
+                    </div>
+                    <div class="p-3.5 bg-slate-900/90 text-[12px] text-slate-300 font-medium">
+                        "+2% para fondeo 60k usando estrategias vistas en clase... 💪📈"
+                    </div>
+                </div>
+
+                <!-- Proof 4 -->
+                <div class="glass-panel rounded-2xl overflow-hidden border border-slate-800 hover:border-emerald-500/50 transition group cursor-pointer bg-slate-900/80 flex flex-col justify-between" onclick="openImageModal('WhatsApp Image 2026-08-17 at 12.00.37 (2).jpeg', 'Diego - Operaciones programadas +$151 USD')">
+                    <div class="p-4 border-b border-slate-800 flex justify-between items-center bg-slate-950/60">
+                        <span class="font-bold text-white text-xs flex items-center gap-2">
+                            <i class="fa-solid fa-circle-check text-emerald-400"></i> Diego
+                        </span>
+                        <span class="text-[11px] bg-emerald-500/20 text-emerald-300 px-2.5 py-0.5 rounded-full font-bold">
+                            +$151 USD
+                        </span>
+                    </div>
+                    <div class="relative overflow-hidden bg-black">
+                        <img src="WhatsApp Image 2026-08-17 at 12.00.37 (2).jpeg" alt="Resultado Diego $151 USD" class="w-full h-80 object-cover object-top group-hover:scale-105 transition duration-300">
+                        <div class="absolute inset-0 bg-slate-950/20 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+                            <span class="bg-sky-500 text-black font-extrabold text-xs px-3 py-1.5 rounded-lg shadow-lg">
+                                <i class="fa-solid fa-magnifying-glass-plus mr-1"></i> Ampliar Imagen
+                            </span>
+                        </div>
+                    </div>
+                    <div class="p-3.5 bg-slate-900/90 text-[12px] text-slate-300 font-medium">
+                        "El proceso y el estudio es fundamental para lograr resultados con esta linda habilidad. +$151 Dólares en ganancias 📈💸"
+                    </div>
+                </div>
+
+                <!-- Proof 5 -->
+                <div class="glass-panel rounded-2xl overflow-hidden border border-slate-800 hover:border-emerald-500/50 transition group cursor-pointer bg-slate-900/80 flex flex-col justify-between" onclick="openImageModal('WhatsApp Image 2026-08-17 at 12.00.37 (3).jpeg', 'Catalina Hernández - Retiro $1,870.50 USD')">
+                    <div class="p-4 border-b border-slate-800 flex justify-between items-center bg-slate-950/60">
+                        <span class="font-bold text-white text-xs flex items-center gap-2">
+                            <i class="fa-solid fa-circle-check text-emerald-400"></i> Catalina Hernández
+                        </span>
+                        <span class="text-[11px] bg-emerald-500/20 text-emerald-300 px-2.5 py-0.5 rounded-full font-bold">
+                            Retiro: $1,870.50 USD
+                        </span>
+                    </div>
+                    <div class="relative overflow-hidden bg-black">
+                        <img src="WhatsApp Image 2026-08-17 at 12.00.37 (3).jpeg" alt="Resultado Catalina Retiro $1870 USD" class="w-full h-80 object-cover object-top group-hover:scale-105 transition duration-300">
+                        <div class="absolute inset-0 bg-slate-950/20 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+                            <span class="bg-sky-500 text-black font-extrabold text-xs px-3 py-1.5 rounded-lg shadow-lg">
+                                <i class="fa-solid fa-magnifying-glass-plus mr-1"></i> Ampliar Imagen
+                            </span>
+                        </div>
+                    </div>
+                    <div class="p-3.5 bg-slate-900/90 text-[12px] text-slate-300 font-medium">
+                        "En casi 3 meses llevé la cuenta a 2370 dólares dejándome de ganancia 1870 dólares... Este negocio cambia vidas ❤️"
+                    </div>
+                </div>
+
+                <!-- Proof 6 -->
+                <div class="glass-panel rounded-2xl overflow-hidden border border-slate-800 hover:border-emerald-500/50 transition group cursor-pointer bg-slate-900/80 flex flex-col justify-between" onclick="openImageModal('WhatsApp Image 2026-08-17 at 12.00.37 (4).jpeg', 'Alejandro - Retiro Exitoso $107 USD')">
+                    <div class="p-4 border-b border-slate-800 flex justify-between items-center bg-slate-950/60">
+                        <span class="font-bold text-white text-xs flex items-center gap-2">
+                            <i class="fa-solid fa-circle-check text-emerald-400"></i> Alejandro
+                        </span>
+                        <span class="text-[11px] bg-emerald-500/20 text-emerald-300 px-2.5 py-0.5 rounded-full font-bold">
+                            Retiro $107 USD
+                        </span>
+                    </div>
+                    <div class="relative overflow-hidden bg-black">
+                        <img src="WhatsApp Image 2026-08-17 at 12.00.37 (4).jpeg" alt="Resultado Alejandro Retiro $107 USD" class="w-full h-80 object-cover object-top group-hover:scale-105 transition duration-300">
+                        <div class="absolute inset-0 bg-slate-950/20 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+                            <span class="bg-sky-500 text-black font-extrabold text-xs px-3 py-1.5 rounded-lg shadow-lg">
+                                <i class="fa-solid fa-magnifying-glass-plus mr-1"></i> Ampliar Imagen
+                            </span>
+                        </div>
+                    </div>
+                    <div class="p-3.5 bg-slate-900/90 text-[12px] text-slate-300 font-medium">
+                        "Retirando ganancias de 107 dólares solo por haber aprendido la habilidad de hacer trading 📈🔥"
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CALL TO ACTION FINAL (NUEVA SECCIÓN 9) -->
+    <section class="py-16 bg-slate-900 border-b border-slate-800 relative overflow-hidden">
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[300px] bg-sky-500/5 blur-[120px] rounded-full pointer-events-none"></div>
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6 relative z-10">
+            <h2 class="text-3xl sm:text-4xl font-black font-display text-white">
+                ¿No sabes por dónde comenzar?
+            </h2>
+            <p class="text-sky-400 text-xl font-bold">
+                No necesitas decidirlo ahora.
+            </p>
+            <p class="text-slate-300 text-base md:text-lg max-w-2xl mx-auto font-medium">
+                Cuéntame dónde estás actualmente y qué quieres aprender.<br>
+                Podemos conversar sobre las opciones disponibles y ayudarte a identificar cuál tiene más sentido para ti.
+            </p>
+            <div class="pt-6">
+                <a href="https://wa.me/56951742785?text=Hola%20niko,%20no%20s%C3%A9%20por%20donde%20comenzar%20y%20me%20gustar%C3%ADa%20que%20me%20ayudes%20con%20Trading." target="_blank" rel="noopener" class="inline-flex items-center gap-2 bg-emerald-500 hover:bg-emerald-400 text-black font-black px-8 py-4 rounded-xl text-base transition shadow-lg shadow-emerald-500/20 transform hover:-translate-y-0.5">
+                    <i class="fa-brands fa-whatsapp text-xl"></i>
+                    Hablar por WhatsApp
+                </a>
+            </div>
+            <p class="italic text-xs text-slate-500 mt-8 max-w-2xl mx-auto">
+                La información educativa no constituye una promesa de rentabilidad ni elimina los riesgos asociados a los mercados financieros.
+            </p>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-slate-950 border-t border-slate-900 py-12 text-xs text-gray-400">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-4 border-b border-slate-900 pb-8">
+                <div class="flex items-center gap-3">
+                    <div class="w-8 h-8 rounded-lg bg-sky-400 text-black font-black flex items-center justify-center font-display">
+                        TP
+                    </div>
+                    <span class="text-white font-bold tracking-tight text-sm">TRADINGPRO</span>
+                </div>
+                <p class="text-center md:text-right text-gray-300">
+                    WhatsApp Directo: +56 9 5174 2785
+                </p>
+            </div>
+
+            <p class="leading-relaxed text-[11px] text-gray-400">
+                <strong>Aviso Educativo:</strong> Trading Pro es una institución dedicada exclusivamente a la educación financiera. No prestamos servicios de inversión, asesoría financiera personalizada ni captación de fondos de terceros. La educación entregada busca capacitar al estudiante en el análisis técnico e instrumental de los mercados financieros.
+            </p>
+
+            <div class="flex justify-between items-center pt-4 text-[10px] text-gray-400">
+                <p>© 2026 Trading Pro. Todos los derechos reservados.</p>
+                <div class="flex gap-4">
+                    <a href="#" class="hover:text-gray-200">Términos y Condiciones</a>
+                    <a href="#" class="hover:text-gray-200">Políticas de Privacidad</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- FLOATING WHATSAPP BUTTON WITH NUMBER +56 9 5174 2785 -->
+    <div class="fixed bottom-6 right-6 z-50">
+        <a href="https://wa.me/56951742785?text=Hola%20niko,%20quiero%20empezar%20aprender%20de%20trading,%20Mi%20nombre%20es" target="_blank" rel="noopener" class="w-16 h-16 bg-emerald-500 hover:bg-emerald-400 text-black rounded-full flex items-center justify-center text-3xl shadow-2xl transition transform hover:scale-110 pulse-whatsapp" title="Hablar por WhatsApp">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <!-- LIGHTBOX MODAL FOR PROOF IMAGES -->
+    <div id="imageModal" class="fixed inset-0 z-50 bg-black/90 backdrop-blur-md hidden flex flex-col justify-center items-center p-4" onclick="closeImageModal()">
+        <div class="relative max-w-4xl w-full max-h-[90vh] flex flex-col items-center" onclick="event.stopPropagation()">
+            <div class="w-full flex justify-between items-center mb-3 px-2">
+                <span id="modalCaption" class="text-white font-bold text-sm sm:text-base"></span>
+                <button onclick="closeImageModal()" class="text-white hover:text-red-400 text-2xl font-black bg-slate-800/80 rounded-full w-10 h-10 flex items-center justify-center border border-slate-700">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+            <img id="modalImg" src="" alt="Captura de WhatsApp" class="max-h-[80vh] w-auto max-w-full rounded-2xl shadow-2xl border border-slate-700 object-contain">
+        </div>
+    </div>
+
+    <script>
+        function openImageModal(src, caption) {
+            document.getElementById('modalImg').src = src;
+            document.getElementById('modalCaption').textContent = caption;
+            document.getElementById('imageModal').classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeImageModal() {
+            document.getElementById('imageModal').classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        }
+
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') closeImageModal();
+        });
+    </script>
+</body>
+</html>

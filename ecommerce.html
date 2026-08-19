@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce | Crea tu Tienda Online Rentable</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Aprende a construir y escalar tu tienda online en menos de 24 horas. Certificación internacional CEL y FGU. Únete al programa líder de E-commerce.">
+    <meta name="keywords" content="curso ecommerce, aprender dropshipping, crear tienda online, negocios digitales, ventas online">
+    <meta name="author" content="Ecommerce">
+    <meta name="robots" content="index, follow">
+
+    <!-- Meta Pixel Code Placeholder -->
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '0000000000000000'); // Replace with your actual Pixel ID
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+        src="https://www.facebook.com/tr?id=0000000000000000&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code Placeholder -->
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800;900&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .pulse-animation {
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7); }
+            70% { transform: scale(1.05); box-shadow: 0 0 0 15px rgba(16, 185, 129, 0); }
+            100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(16, 185, 129, 0); }
+        }
+    </style>
+</head>
+<body class="bg-black text-white antialiased selection:bg-red-600 selection:text-white">
+
+    <!-- HERO SECTION (Above the Fold) -->
+    <header class="bg-red-50 text-zinc-900 relative overflow-hidden border-b border-red-200">
+        <!-- Background Pattern -->
+        <div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(#dc2626 1px, transparent 1px); background-size: 30px 30px;"></div>
+        
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center relative z-10">
+            <div class="text-2xl font-black tracking-tighter text-zinc-900">ECOMMERCE<span class="text-red-600">.</span></div>
+            <a href="#precios" class="hidden md:block text-sm font-semibold text-zinc-800 hover:text-red-600 transition">Ver Planes</a>
+        </nav>
+
+        <div class="container mx-auto px-6 pt-16 pb-24 md:pt-24 md:pb-32 relative z-10 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 md:pr-12 text-center md:text-left">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-black leading-tight mb-6 text-zinc-900 uppercase">
+                    Aprende Ecommerce y descubre cómo construir tu <span class="text-red-600">propio negocio online</span>
+                </h1>
+                
+                <p class="text-lg md:text-xl text-gray-700 mb-8 font-light">
+                    No necesitas tener una gran empresa para comenzar. Necesitas entender cómo funciona el comercio digital, aprender a utilizar las herramientas adecuadas y contar con una metodología que te permita avanzar paso a paso sin experiencia previa.
+                </p>
+
+                <!-- Primary CTA (Action Oriented) -->
+                <div class="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-4">
+                    <a href="https://wa.me/56951742785?text=Hola%20niko,%20quiero%20empezar%20con%20mi%20tienda%20online,%20Mi%20nombre%20es" target="_blank" class="w-full sm:w-auto px-8 py-4 bg-emerald-600 hover:bg-emerald-700 text-white font-bold rounded-lg shadow-lg shadow-emerald-600/30 transform transition hover:-translate-y-1 text-center text-lg flex items-center justify-center gap-2">
+                        <i class="fab fa-whatsapp text-xl"></i> Asesoría Gratis por WhatsApp
+                    </a>
+                </div>
+                
+                <!-- Social Proof snippet -->
+                <div class="mt-8 flex items-center justify-center md:justify-start gap-3">
+                    <div class="flex -space-x-3">
+                        <img class="w-10 h-10 rounded-full border-2 border-white object-cover" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80" alt="User">
+                        <img class="w-10 h-10 rounded-full border-2 border-white object-cover" src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=100&q=80" alt="User">
+                        <img class="w-10 h-10 rounded-full border-2 border-white object-cover" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=100&q=80" alt="User">
+                    </div>
+                    <p class="text-sm text-gray-700 font-medium">+41,000 alumnos ya están facturando</p>
+                </div>
+            </div>
+            
+            <!-- Hero Image/Visual -->
+            <div class="md:w-1/2 mt-12 md:mt-0 relative">
+                <div class="absolute inset-0 bg-gradient-to-tr from-red-600 to-yellow-500 rounded-2xl blur-2xl opacity-20 animate-pulse"></div>
+                <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=800&q=80" alt="Dashboard E-commerce" class="relative rounded-2xl shadow-2xl border border-red-200 transform -rotate-2 hover:rotate-0 transition duration-500">
+                
+                <!-- Floating Badge -->
+                <div class="absolute -bottom-6 -left-6 bg-white p-4 rounded-xl shadow-xl border border-red-200 flex items-center gap-3 text-zinc-900">
+                    <div class="bg-red-100 p-2 rounded-full text-red-600">
+                        <i class="fas fa-chart-line text-xl"></i>
+                    </div>
+                    <div>
+                        <p class="text-xs text-gray-500 font-bold uppercase">Resultado Real</p>
+                        <p class="text-zinc-900 font-black">Ventas en Automático</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- SECTION 2: PAIN POINT / RELATABILITY -->
+    <section class="py-20 bg-white text-black border-t border-gray-200">
+        <div class="container mx-auto px-6 max-w-4xl text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-8 text-black">Quizás llevas tiempo pensando que deberías hacer algo diferente</h2>
+            <div class="text-xl text-gray-700 leading-relaxed mb-8 space-y-4 text-left md:text-center">
+                <p>Tal vez quieres desarrollar una nueva habilidad.</p>
+                <p>Tal vez te gustaría tener un proyecto propio.</p>
+                <p>Tal vez estás buscando una alternativa que puedas desarrollar junto a tu trabajo actual.</p>
+                <p>O simplemente sientes que el mundo está cambiando y no quieres quedarte mirando cómo otros aprovechan las nuevas oportunidades.</p>
+                
+                <p class="font-bold text-2xl mt-8 mb-2">Pero aparece una pregunta:<br><span class="text-red-600">¿Por dónde empiezo?</span></p>
+                
+                <p>Porque tener ganas de emprender es una cosa.</p>
+                <p>Saber qué vender, cómo venderlo, cómo atraer personas y cómo construir un sistema que funcione es otra.</p>
+            </div>
+            <div class="w-24 h-1 bg-red-600 mx-auto rounded-full mt-8"></div>
+        </div>
+    </section>
+
+    <!-- SECTION 3: THE INFORMATION OVERLOAD -->
+    <section class="py-20 bg-zinc-50 text-black border-t border-gray-200">
+        <div class="container mx-auto px-6 max-w-4xl">
+            <p class="text-xl text-gray-700 leading-relaxed mb-6 text-center md:text-left">
+                El problema no es que no existan oportunidades. Hoy cualquiera puede encontrar información sobre Ecommerce en:
+            </p>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-10">
+                <div class="bg-white p-4 rounded-xl border border-gray-200 text-center shadow-sm"><i class="fas fa-video text-red-600 mb-2 text-xl block"></i> Videos</div>
+                <div class="bg-white p-4 rounded-xl border border-gray-200 text-center shadow-sm"><i class="fas fa-graduation-cap text-red-600 mb-2 text-xl block"></i> Cursos</div>
+                <div class="bg-white p-4 rounded-xl border border-gray-200 text-center shadow-sm"><i class="fas fa-hashtag text-red-600 mb-2 text-xl block"></i> Redes sociales</div>
+                <div class="bg-white p-4 rounded-xl border border-gray-200 text-center shadow-sm"><i class="fas fa-tools text-red-600 mb-2 text-xl block"></i> Herramientas</div>
+                <div class="bg-white p-4 rounded-xl border border-gray-200 text-center shadow-sm"><i class="fas fa-store text-red-600 mb-2 text-xl block"></i> Tiendas online</div>
+                <div class="bg-white p-4 rounded-xl border border-gray-200 text-center shadow-sm"><i class="fas fa-ad text-red-600 mb-2 text-xl block"></i> Publicidad</div>
+                <div class="bg-white p-4 rounded-xl border border-gray-200 text-center shadow-sm col-span-2 md:col-span-2"><i class="fas fa-robot text-red-600 mb-2 text-xl block"></i> Inteligencia Artificial</div>
+            </div>
+
+            <div class="bg-red-50 p-8 rounded-2xl border border-red-200 text-center">
+                <p class="text-xl md:text-2xl text-zinc-900 leading-relaxed font-black mb-4">
+                    El problema es que tanta información puede terminar generando exactamente lo contrario:<br>
+                    <span class="text-red-600">más información y menos claridad.</span>
+                </p>
+                <p class="text-lg text-gray-800 leading-relaxed font-medium">
+                    Por eso aprender acompañado y siguiendo una estructura puede marcar una diferencia.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 4: HOW ECOMMERCE WORKS -->
+    <section class="py-20 bg-white text-black border-t border-gray-200">
+        <div class="container mx-auto px-6 max-w-4xl">
+            <h2 class="text-3xl md:text-4xl font-bold mb-8 text-black text-center">Entonces... ¿Cómo funciona un negocio de Ecommerce?</h2>
+            
+            <p class="text-xl text-gray-700 leading-relaxed mb-8">
+                En términos simples, creas una tienda online donde trabajas como intermediario entre el cliente y el proveedor. Con el beneficio de no tener que invertir en stock ni preocuparte del envío porque eso lo hace el proveedor. Ahora, si tienes una pyme o un negocio puedes vender tus propios productos. Y generamos ventas automatizadas gracias a la publicidad en redes sociales.
+            </p>
+            
+            <div class="bg-zinc-900 p-6 md:p-8 rounded-2xl mb-10 text-center shadow-xl">
+                <p class="text-sm font-bold text-gray-400 uppercase tracking-widest mb-4">El proceso puede verse así:</p>
+                <div class="flex flex-wrap justify-center items-center gap-2 md:gap-4 text-sm md:text-lg font-bold text-white">
+                    <span class="bg-zinc-800 px-3 py-2 rounded-lg border border-zinc-700">Producto</span>
+                    <i class="fas fa-arrow-right text-red-500"></i>
+                    <span class="bg-zinc-800 px-3 py-2 rounded-lg border border-zinc-700">Tienda/Oferta</span>
+                    <i class="fas fa-arrow-right text-red-500"></i>
+                    <span class="bg-zinc-800 px-3 py-2 rounded-lg border border-zinc-700">Personas interesadas</span>
+                    <i class="fas fa-arrow-right text-red-500"></i>
+                    <span class="bg-zinc-800 px-3 py-2 rounded-lg border border-zinc-700">Compra</span>
+                    <i class="fas fa-arrow-right text-red-500"></i>
+                    <span class="bg-zinc-800 px-3 py-2 rounded-lg border border-zinc-700">Entrega</span>
+                    <i class="fas fa-arrow-right text-red-500"></i>
+                    <span class="bg-red-600 px-3 py-2 rounded-lg text-white">Cliente</span>
+                </div>
+            </div>
+            
+            <p class="text-xl text-zinc-900 leading-relaxed mb-6 font-bold">Pero detrás de ese proceso existen varias habilidades:</p>
+            
+            <ul class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 text-lg text-gray-700 mb-10">
+                <li class="flex items-center gap-2"><i class="fas fa-check text-emerald-600"></i> Elegir productos.</li>
+                <li class="flex items-center gap-2"><i class="fas fa-check text-emerald-600"></i> Entender al cliente.</li>
+                <li class="flex items-center gap-2"><i class="fas fa-check text-emerald-600"></i> Construir una oferta.</li>
+                <li class="flex items-center gap-2"><i class="fas fa-check text-emerald-600"></i> Crear una tienda.</li>
+                <li class="flex items-center gap-2"><i class="fas fa-check text-emerald-600"></i> Generar tráfico.</li>
+                <li class="flex items-center gap-2"><i class="fas fa-check text-emerald-600"></i> Convertir visitas en compradores.</li>
+                <li class="flex items-center gap-2"><i class="fas fa-check text-emerald-600"></i> Gestionar pedidos.</li>
+                <li class="flex items-center gap-2"><i class="fas fa-check text-emerald-600"></i> Analizar resultados.</li>
+                <li class="flex items-center gap-2"><i class="fas fa-check text-emerald-600"></i> Mejorar continuamente.</li>
+            </ul>
+            
+            <p class="text-xl text-red-600 leading-relaxed italic font-medium border-l-4 border-red-600 pl-6 py-2 bg-red-50 rounded-r-lg">
+                Por eso aprender Ecommerce no consiste solamente en crear una tienda. Consiste en aprender cómo funciona todo el sistema que existe detrás de ella.
+            </p>
+        </div>
+    </section>
+
+    <!-- SECTION 5: INTERNATIONAL FORMATION -->
+    <section class="py-20 bg-red-50 text-zinc-900 relative overflow-hidden border-t border-red-200">
+        <div class="absolute top-0 right-0 -mt-20 -mr-20 w-80 h-80 bg-red-200 rounded-full blur-3xl opacity-50"></div>
+        <div class="absolute bottom-0 left-0 -mb-20 -ml-20 w-80 h-80 bg-red-300 rounded-full blur-3xl opacity-40"></div>
+        
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="flex flex-col lg:flex-row items-center gap-12">
+                <div class="lg:w-1/2">
+                    <h2 class="text-3xl md:text-5xl font-black mb-6 text-zinc-900">La buena noticia es que... Tu formación ahora tiene un alcance <span class="text-red-600">Internacional</span></h2>
+                    <p class="text-xl text-gray-700 mb-8 font-light">
+                        Hemos establecido una alianza histórica con <strong>Center of Education and Leadership (CEL)</strong> y <strong>Florida Global University (FGU)</strong>.
+                    </p>
+                    
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-check-circle text-red-600 text-xl mt-1"></i>
+                            <div>
+                                <h4 class="font-bold text-lg text-zinc-900">Reconocimiento Internacional 🌎</h4>
+                                <p class="text-gray-600 text-sm">Tu certificado respaldado por instituciones en USA.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-check-circle text-red-600 text-xl mt-1"></i>
+                            <div>
+                                <h4 class="font-bold text-lg text-zinc-900">Mayor Valor Profesional 📄</h4>
+                                <p class="text-gray-600 text-sm">Destaca tu perfil en el mercado laboral y ante inversores.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-check-circle text-red-600 text-xl mt-1"></i>
+                            <div>
+                                <h4 class="font-bold text-lg text-zinc-900">Impulsa tu Crecimiento 🚀</h4>
+                                <p class="text-gray-600 text-sm">Disponible para alumnos y exalumnos que completen la formación.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="lg:w-1/2 bg-white p-8 rounded-2xl border border-red-200 text-center shadow-xl">
+                    <p class="text-sm uppercase tracking-widest text-red-600 mb-4 font-bold">Avalado por</p>
+                    <div class="flex flex-col sm:flex-row justify-center items-center gap-8 mb-6">
+                        <div class="bg-red-600 text-white px-6 py-4 rounded-lg font-black text-xl shadow-lg w-full sm:w-auto">
+                            FLORIDA GLOBAL<br><span class="text-sm font-normal">UNIVERSITY</span>
+                        </div>
+                        <div class="bg-red-600 text-white px-6 py-4 rounded-lg font-black text-2xl shadow-lg w-full sm:w-auto flex items-center justify-center gap-2">
+                            CEL <span class="text-xs font-normal text-left leading-tight">Center of<br>Education &<br>Leadership</span>
+                        </div>
+                    </div>
+                    <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=600&q=80" alt="Estudiante con certificado" class="rounded-lg shadow-xl mt-6 opacity-95 hover:opacity-100 transition">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 6: WHO IS THIS FOR? -->
+    <section class="py-20 bg-white text-black border-t border-gray-200">
+        <div class="container mx-auto px-6 max-w-5xl">
+            <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center text-black">Y tal vez te estés preguntando: ¿Para quién puede ser esta formación?</h2>
+            
+            <div class="flex flex-col md:flex-row gap-8">
+                <!-- Para ti si -->
+                <div class="md:w-1/2 bg-emerald-50 p-8 rounded-2xl border border-emerald-100 shadow-sm">
+                    <h3 class="text-2xl font-bold text-emerald-800 mb-6 flex items-center gap-3"><i class="fas fa-thumbs-up text-3xl"></i> Puede ser para ti si:</h3>
+                    <ul class="space-y-4 text-gray-700">
+                        <li class="flex items-start gap-3"><i class="fas fa-check-circle text-emerald-600 mt-1"></i> Estás comenzando desde cero.</li>
+                        <li class="flex items-start gap-3"><i class="fas fa-check-circle text-emerald-600 mt-1"></i> Quieres aprender una nueva habilidad digital.</li>
+                        <li class="flex items-start gap-3"><i class="fas fa-check-circle text-emerald-600 mt-1"></i> Te interesa construir un proyecto propio.</li>
+                        <li class="flex items-start gap-3"><i class="fas fa-check-circle text-emerald-600 mt-1"></i> Quieres entender cómo funciona el comercio online.</li>
+                        <li class="flex items-start gap-3"><i class="fas fa-check-circle text-emerald-600 mt-1"></i> Estás dispuesto a aprender y aplicar.</li>
+                        <li class="flex items-start gap-3"><i class="fas fa-check-circle text-emerald-600 mt-1"></i> Quieres utilizar herramientas actuales para trabajar de manera más eficiente.</li>
+                        <li class="flex items-start gap-3"><i class="fas fa-check-circle text-emerald-600 mt-1"></i> Buscas una oportunidad para hacerlo en paralelo a tus actividades diarias.</li>
+                    </ul>
+                </div>
+
+                <!-- No es para ti si -->
+                <div class="md:w-1/2 bg-red-50 p-8 rounded-2xl border border-red-100 shadow-sm flex flex-col">
+                    <h3 class="text-2xl font-bold text-red-800 mb-6 flex items-center gap-3"><i class="fas fa-thumbs-down text-3xl"></i> Y probablemente no sea para ti si:</h3>
+                    <ul class="space-y-4 text-gray-700 flex-grow">
+                        <li class="flex items-start gap-3"><i class="fas fa-times-circle text-red-600 mt-1"></i> Buscas dinero rápido.</li>
+                        <li class="flex items-start gap-3"><i class="fas fa-times-circle text-red-600 mt-1"></i> Esperas resultados sin aprender.</li>
+                        <li class="flex items-start gap-3"><i class="fas fa-times-circle text-red-600 mt-1"></i> Quieres una fórmula mágica.</li>
+                        <li class="flex items-start gap-3"><i class="fas fa-times-circle text-red-600 mt-1"></i> No estás dispuesto a dedicar tiempo al proceso.</li>
+                    </ul>
+                    <div class="mt-8 bg-red-100 p-4 rounded-lg border-l-4 border-red-600">
+                        <p class="font-bold text-red-900 italic">Porque aprender un negocio también significa aprender a construirlo.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 7: BENEFITS / METHOD -->
+    <section class="py-20 bg-zinc-950 border-t border-zinc-900">
+        <div class="container mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mt-2 mb-4 text-white">Beneficios que encontrarás dentro de la comunidad:</h2>
+                <div class="w-24 h-1 bg-red-600 mx-auto rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Benefit 1 -->
+                <div class="bg-zinc-900 p-8 rounded-2xl border border-zinc-800 hover:border-red-600/50 transition">
+                    <div class="w-12 h-12 bg-red-950 text-red-500 rounded-xl flex items-center justify-center text-2xl mb-6">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-white">Fundamentos y Estrategia</h3>
+                    <p class="text-gray-400">Aprende detalladamente cómo funciona un negocio de Ecommerce desde adentro y cómo identificar oportunidades reales de mercado.</p>
+                </div>
+                <!-- Benefit 2 -->
+                <div class="bg-zinc-900 p-8 rounded-2xl border border-zinc-800 hover:border-red-600/50 transition">
+                    <div class="w-12 h-12 bg-red-950 text-red-500 rounded-xl flex items-center justify-center text-2xl mb-6">
+                        <i class="fas fa-store"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-white">Creación de Tienda</h3>
+                    <p class="text-gray-400">Descubre cómo crear y estructurar una tienda online profesional desde cero, sin necesidad de conocimientos previos de programación.</p>
+                </div>
+                <!-- Benefit 3 -->
+                <div class="bg-zinc-900 p-8 rounded-2xl border border-zinc-800 hover:border-red-600/50 transition">
+                    <div class="w-12 h-12 bg-red-950 text-red-500 rounded-xl flex items-center justify-center text-2xl mb-6">
+                        <i class="fas fa-tags"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-white">Productos y Ofertas</h3>
+                    <p class="text-gray-400">Entiende a fondo cómo funcionan los productos y las ofertas. Crea copywriting persuasivo que conecte con tu cliente ideal.</p>
+                </div>
+                <!-- Benefit 4 -->
+                <div class="bg-zinc-900 p-8 rounded-2xl border border-zinc-800 hover:border-red-600/50 transition">
+                    <div class="w-12 h-12 bg-red-950 text-red-500 rounded-xl flex items-center justify-center text-2xl mb-6">
+                        <i class="fas fa-bullhorn"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-white">Tráfico y Publicidad</h3>
+                    <p class="text-gray-400">Aprende cómo atraer potenciales clientes masivamente utilizando publicidad efectiva y estrategias de tráfico rentables.</p>
+                </div>
+                <!-- Benefit 5 -->
+                <div class="bg-zinc-900 p-8 rounded-2xl border border-zinc-800 hover:border-red-600/50 transition">
+                    <div class="w-12 h-12 bg-red-950 text-red-500 rounded-xl flex items-center justify-center text-2xl mb-6">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-white">Herramientas e IA</h3>
+                    <p class="text-gray-400">Conoce cómo utilizar las mejores herramientas digitales y cómo incorporar Inteligencia Artificial al proceso para ahorrar tiempo.</p>
+                </div>
+                <!-- Benefit 6 -->
+                <div class="bg-zinc-900 p-8 rounded-2xl border border-zinc-800 hover:border-red-600/50 transition">
+                    <div class="w-12 h-12 bg-red-950 text-red-500 rounded-xl flex items-center justify-center text-2xl mb-6">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-white">Análisis y Mejora</h3>
+                    <p class="text-gray-400">Aprende cómo analizar datos, mejorar continuamente lo que estás haciendo y gestionar de forma automatizada tus pedidos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 8: RESULTADOS Y TESTIMONIOS -->
+    <section class="py-20 bg-white text-black border-t border-gray-200">
+        <div class="container mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-red-600 font-bold tracking-wider uppercase text-sm">Comunidad de Éxito</span>
+                <h2 class="text-3xl md:text-4xl font-bold mt-2 mb-4 text-black">Resultados Reales de <span class="text-yellow-500">Nuestros Alumnos</span></h2>
+                <p class="text-gray-600 text-lg">Cientos de emprendedores ya están facturando gracias a nuestra metodología. Estos son algunos de los casos de éxito recientes compartidos en nuestra comunidad privada.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                
+                <!-- Testimonio 1 -->
+                <div class="bg-zinc-50 rounded-2xl overflow-hidden border border-zinc-200 hover:shadow-xl transition-shadow duration-300">
+                    <img src="WhatsApp%20Image%202026-08-16%20at%2022.12.58%20(3).jpeg" onerror="this.onerror=null; this.src='https://placehold.co/600x800/f8fafc/334155?text=Testimonio+Julio'" alt="Testimonio de Julio - Ventas" class="w-full h-auto object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center gap-2 mb-3 text-yellow-400">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-gray-800 italic font-medium">"Casi un sueldo mínimo, LOCURA"</p>
+                        <p class="text-sm text-gray-500 mt-2 font-semibold">- Emprende con Julio</p>
+                    </div>
+                </div>
+
+                <!-- Testimonio 2 -->
+                <div class="bg-zinc-50 rounded-2xl overflow-hidden border border-zinc-200 hover:shadow-xl transition-shadow duration-300">
+                    <img src="WhatsApp%20Image%202026-08-16%20at%2022.12.57%20(1).jpeg" onerror="this.onerror=null; this.src='https://placehold.co/600x800/f8fafc/334155?text=Testimonio+Angela+2.3M'" alt="Testimonio de Angela - 2.3M en ventas" class="w-full h-auto object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center gap-2 mb-3 text-yellow-400">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-gray-800 italic font-medium">"Más de 2.3 millones en ventas 🔥 se lo dejo para los que están iniciando, continúen..."</p>
+                        <p class="text-sm text-gray-500 mt-2 font-semibold">- Angela</p>
+                    </div>
+                </div>
+
+                <!-- Testimonio 3 -->
+                <div class="bg-zinc-50 rounded-2xl overflow-hidden border border-zinc-200 hover:shadow-xl transition-shadow duration-300">
+                    <img src="WhatsApp%20Image%202026-08-16%20at%2022.12.57%20(2).jpeg" onerror="this.onerror=null; this.src='https://placehold.co/600x800/f8fafc/334155?text=Testimonio+Ventas+Internacionales'" alt="Testimonio de ventas internacionales" class="w-full h-auto object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center gap-2 mb-3 text-yellow-400">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-gray-800 italic font-medium">"Ya llegué arriba del 1 millón en ventas con mi tienda trabajando desde la casa... sin invertir en ellos, vendiendo en Guatemala 🇬🇹"</p>
+                        <p class="text-sm text-gray-500 mt-2 font-semibold">- Alumno de la Comunidad</p>
+                    </div>
+                </div>
+
+                <!-- Testimonio 4 -->
+                <div class="bg-zinc-50 rounded-2xl overflow-hidden border border-zinc-200 hover:shadow-xl transition-shadow duration-300">
+                    <img src="WhatsApp%20Image%202026-08-16%20at%2022.12.58%20(1).jpeg" onerror="this.onerror=null; this.src='https://placehold.co/600x800/f8fafc/334155?text=Testimonio+Angela+866k'" alt="Testimonio de Angela - 866mil" class="w-full h-auto object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center gap-2 mb-3 text-yellow-400">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-gray-800 italic font-medium">"Les quiero compartir mis resultados de los últimos 7 días en mi tienda 🔥🛍💸 +866mil en ventas"</p>
+                        <p class="text-sm text-gray-500 mt-2 font-semibold">- Angela</p>
+                    </div>
+                </div>
+
+                <!-- Testimonio 5 -->
+                <div class="bg-zinc-50 rounded-2xl overflow-hidden border border-zinc-200 hover:shadow-xl transition-shadow duration-300">
+                    <img src="WhatsApp%20Image%202026-08-16%20at%2022.12.58%20(2).jpeg" onerror="this.onerror=null; this.src='https://placehold.co/600x800/f8fafc/334155?text=Testimonio+Silvana'" alt="Testimonio de Silvana - Pedidos" class="w-full h-auto object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center gap-2 mb-3 text-yellow-400">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-gray-800 italic font-medium">"Hoy retomé mi tienda y ya tres pedidos al día!!! Nueva meta llegar a 10k en ventas mensuales en ecommerce!!!"</p>
+                        <p class="text-sm text-gray-500 mt-2 font-semibold">- Emprende con Silvana</p>
+                    </div>
+                </div>
+
+                <!-- Testimonio 6 -->
+                <div class="bg-zinc-50 rounded-2xl overflow-hidden border border-zinc-200 hover:shadow-xl transition-shadow duration-300">
+                    <img src="WhatsApp%20Image%202026-08-16%20at%2022.12.57.jpeg" onerror="this.onerror=null; this.src='https://placehold.co/600x800/f8fafc/334155?text=Testimonio+Buka'" alt="Testimonio de Buka - Pedidos EasySell" class="w-full h-auto object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center gap-2 mb-3 text-yellow-400">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-gray-800 italic font-medium">"Ánimo chicos se puedeeee. Vamos vamosss 💸🙏"</p>
+                        <p class="text-sm text-gray-500 mt-2 font-semibold">- Buka</p>
+                    </div>
+                </div>
+
+            </div>
+            
+            <div class="mt-12 text-center">
+                <a href="https://wa.me/56951742785?text=Hola%20niko,%20quiero%20empezar%20con%20mi%20tienda%20online,%20Mi%20nombre%20es" target="_blank" class="inline-flex items-center gap-2 px-8 py-4 bg-emerald-600 hover:bg-emerald-700 text-white font-bold rounded-lg shadow-lg shadow-emerald-600/30 transition-transform transform hover:-translate-y-1">
+                    <i class="fab fa-whatsapp text-xl"></i> Yo también quiero estos resultados
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 9: PRICING PLANS -->
+    <section id="precios" class="py-20 bg-red-50 text-zinc-900 border-t border-red-200">
+        <div class="container mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-4xl font-black mb-4 text-zinc-900">¿Estás listo para dar el <span class="text-red-600">siguiente paso</span>?</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+                
+                <!-- Plan 90 Días -->
+                <div class="bg-white rounded-2xl border border-red-200 p-8 flex flex-col hover:-translate-y-1 transition duration-300 shadow-lg">
+                    <h3 class="text-xl font-bold text-zinc-900 mb-2 uppercase tracking-wide text-center border-b border-red-100 pb-4">FORMACIÓN EXPRESS 90 DÍAS</h3>
+                    <ul class="space-y-4 mb-8 flex-grow mt-6">
+                        <li class="flex items-start gap-3 text-gray-700 text-sm">
+                            <i class="fas fa-graduation-cap text-red-600 mt-1"></i> 
+                            <span>Educación en comercio electrónico y creación de tienda.</span>
+                        </li>
+                        <li class="flex items-start gap-3 text-gray-700 text-sm">
+                            <i class="fas fa-chart-bar text-red-600 mt-1"></i> 
+                            <span>Formación completa: Nivel básico, intermedio y avanzado.</span>
+                        </li>
+                        <li class="flex items-start gap-3 text-gray-700 text-sm">
+                            <i class="fas fa-play-circle text-red-600 mt-1"></i> 
+                            <span>Clases grabadas y en vivo. Aprende a vender por internet.</span>
+                        </li>
+                        <li class="flex items-start gap-3 text-gray-700 text-sm">
+                            <i class="fas fa-clipboard-list text-red-600 mt-1"></i> 
+                            <span>Guía paso a paso para comenzar desde cero.</span>
+                        </li>
+                        <li class="flex items-start gap-3 text-gray-700 text-sm">
+                            <i class="fab fa-whatsapp text-red-600 mt-1"></i> 
+                            <span>Comunidad privada de WhatsApp.</span>
+                        </li>
+                    </ul>
+                    <a href="https://wa.me/56951742785?text=Hola%20niko,%20Quiero%20el%20plan%20de%2090%20d%C3%ADas%20de%20Ecommerce.%20Mi%20nombre%20es" target="_blank" class="w-full py-3 bg-zinc-800 hover:bg-zinc-900 text-white font-bold rounded-lg text-center transition">Elegir Plan Formación Express</a>
+                </div>
+
+                <!-- Plan 180 Días -->
+                <div class="bg-white rounded-2xl border border-red-600 p-8 flex flex-col relative shadow-xl">
+                    <h3 class="text-xl font-bold text-red-600 mb-2 uppercase tracking-wide text-center border-b border-red-100 pb-4">FORMACIÓN CONTÍNUA 180 DÍAS</h3>
+                    <ul class="space-y-4 mb-8 flex-grow mt-6">
+                        <li class="flex items-center gap-2 text-red-600 font-bold text-sm mb-2"><i class="fas fa-plus"></i> Todo el Plan 90 Días +</li>
+                        <li class="flex items-start gap-3 text-gray-800 text-sm font-medium">
+                            <i class="fas fa-store-alt text-red-600 mt-1"></i> 
+                            <span>Asesoría de revisión de tienda.</span>
+                        </li>
+                        <li class="flex items-start gap-3 text-gray-800 text-sm font-medium">
+                            <i class="fas fa-chart-line text-red-600 mt-1"></i> 
+                            <span>Estrategias para vender más de 20 productos al día.</span>
+                        </li>
+                        <li class="flex items-start gap-3 text-gray-800 text-sm font-medium">
+                            <i class="fas fa-globe text-red-600 mt-1"></i> 
+                            <span>Acceso a más de 1.500 proveedores en +10 países.</span>
+                        </li>
+                    </ul>
+                    <a href="https://wa.me/56951742785?text=Hola%20niko,%20Quiero%20el%20plan%20de%20180%20d%C3%ADas%20de%20Ecommerce.%20Mi%20nombre%20es" target="_blank" class="w-full py-4 bg-red-600 hover:bg-red-700 text-white font-bold rounded-lg text-center transition shadow-lg shadow-red-600/30">Elegir Plan Formación Contínua</a>
+                </div>
+
+                <!-- Plan 360 Días -->
+                <div class="bg-white rounded-2xl shadow-xl border-2 border-yellow-400 p-8 flex flex-col hover:-translate-y-1 transition duration-300">
+                    <h3 class="text-xl font-bold text-yellow-500 mb-2 uppercase tracking-wide text-center border-b border-red-100 pb-4">PLAN PROFESIONAL 360 DÍAS</h3>
+                    <ul class="space-y-4 mb-8 flex-grow mt-6">
+                        <li class="flex items-center gap-2 text-yellow-500 font-bold text-sm mb-2"><i class="fas fa-plus text-yellow-500"></i> Todo el Plan 180 Días +</li>
+                        <li class="flex items-start gap-3 text-gray-800 text-sm">
+                            <i class="fas fa-users text-red-600 mt-1"></i> 
+                            <span>Acompañamiento presencial y virtual.</span>
+                        </li>
+                        <li class="flex items-start gap-3 text-gray-800 text-sm">
+                            <i class="fas fa-award text-red-600 mt-1"></i> 
+                            <span>Mentorías de desarrollo personal y mentalidad de éxito.</span>
+                        </li>
+                        <li class="flex items-start gap-3 text-zinc-900 font-bold text-sm bg-yellow-50 p-2 rounded border border-yellow-300">
+                            <i class="fas fa-certificate text-yellow-500 mt-1"></i> 
+                            <span>Opción a Certificación Internacional FGU/CEL.</span>
+                        </li>
+                    </ul>
+                    <a href="https://wa.me/56951742785?text=Hola%20niko,%20Quiero%20el%20plan%20de%20360%20d%C3%ADas%20de%20Ecommerce.%20Mi%20nombre%20es" target="_blank" class="w-full py-3 bg-yellow-500 hover:bg-yellow-600 text-black font-bold rounded-lg text-center transition shadow-lg shadow-yellow-500/20">Elegir Plan Profesional</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION 10: HELP ME CHOOSE -->
+    <section class="py-16 bg-white text-center border-t border-gray-200">
+        <div class="container mx-auto px-6 max-w-2xl">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4 text-black">¿No sabes cuál elegir?</h2>
+            <p class="text-xl text-gray-700 mb-8">
+                Cuéntame qué estás buscando, qué experiencia tienes y qué quieres conseguir con tu tienda online. Te ayudaré a diseñar un plan que se adecue a ti.
+            </p>
+            <a href="https://wa.me/56951742785?text=Hola%20niko,%20no%20s%C3%A9%20qu%C3%A9%20plan%20de%20Ecommerce%20elegir,%20%C2%BFme%20ayudas%3F" target="_blank" class="inline-flex items-center justify-center gap-2 px-8 py-4 bg-emerald-600 hover:bg-emerald-700 text-white font-bold rounded-lg shadow-lg shadow-emerald-600/30 transition-transform transform hover:-translate-y-1">
+                <i class="fab fa-whatsapp text-xl"></i> Habla conmigo por WhatsApp
+            </a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-black text-gray-400 py-12 border-t border-zinc-900">
+        <div class="container mx-auto px-6 text-center md:text-left flex flex-col md:flex-row justify-between items-center">
+            <div class="mb-4 md:mb-0">
+                <div class="text-xl font-black text-white tracking-tighter mb-2">ECOMMERCE<span class="text-red-600">.</span></div>
+                <p class="text-sm text-gray-400">Transformando la educación digital en el mundo.</p>
+            </div>
+            <div class="text-sm">
+                <p>&copy; 2024. Todos los derechos reservados.</p>
+                <p class="mt-1 text-gray-500">Descargo de responsabilidad: Los resultados pueden variar.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- FLOATING BUTTON (Direct Contact) -->
+    <a href="https://wa.me/56951742785?text=Hola,%20estoy%20en%20la%20p%C3%A1gina%20y%20quiero%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Ecommerce" target="_blank" 
+       class="fixed bottom-6 right-6 bg-emerald-600 text-white w-16 h-16 rounded-full flex items-center justify-center text-3xl shadow-2xl z-50 hover:bg-emerald-700 transition-colors pulse-animation"
+       aria-label="Contactar por WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+</body>
+</html>

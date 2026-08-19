@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comunidad de Embajadores | El Vehículo Hacia Tu Libertad Digital</title>
+    <meta name="description" content="Descubre cómo el network marketing y el modelo de embajadores digitales te permiten desarrollar habilidades, tiempo libre y crecimiento personal a tu propio ritmo.">
+    <meta name="keywords" content="network marketing, embajadores digitales, libertad de tiempo, marketing de afiliados, desarrollo personal, emprendimiento digital">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Meta Pixel Code Placeholder -->
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        // Pixel ID simulado listo para su uso
+        fbq('init', '1234567890987654'); 
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1234567890987654&ev=PageView&noscript=1"/></noscript>
+    <!-- End Meta Pixel Code -->
+
+    <!-- Custom Tailwind Theme Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            dark: '#120320',
+                            purple: '#220845',
+                            lightPurple: '#9333ea',
+                            softPurple: '#c084fc',
+                            accentYellow: '#facc15',
+                            brightYellow: '#fde047',
+                            electricBlue: '#3b82f6',
+                            softBlue: '#60a5fa'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Inter', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            background-color: #120320;
+            color: #f3f4f6;
+            font-family: 'Inter', sans-serif;
+            overflow-x: hidden;
+        }
+
+        .bg-section-dark {
+            background-color: #120320;
+        }
+
+        .bg-section-light {
+            background-color: rgba(255, 255, 255, 0.03);
+        }
+
+        .glass-card {
+            background: rgba(34, 8, 69, 0.45);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(147, 51, 234, 0.2);
+        }
+
+        .glass-card-light {
+            background: rgba(45, 12, 85, 0.55);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(192, 132, 252, 0.3);
+        }
+
+        .btn-pulse {
+            animation: pulse-glow 2.5s infinite;
+        }
+
+        @keyframes pulse-glow {
+            0% { box-shadow: 0 0 0 0 rgba(250, 204, 21, 0.5); }
+            70% { box-shadow: 0 0 0 15px rgba(250, 204, 21, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(250, 204, 21, 0); }
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Navigation Header -->
+    <header class="py-4 px-4 md:px-8 border-b border-purple-900/30 bg-brand-dark/90 backdrop-blur-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-brand-accentYellow to-brand-lightPurple flex items-center justify-center font-black text-brand-dark text-lg shadow-md">
+                    N
+                </div>
+                <div>
+                    <span class="font-heading font-extrabold text-base md:text-lg tracking-tight text-white block">COMUNIDAD DE <span class="text-brand-accentYellow">EMBAJADORES</span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section (Dark Background) -->
+    <section class="bg-section-dark pt-12 pb-20 px-4 md:px-8 relative overflow-hidden text-center">
+        <!-- Ambient background glows -->
+        <div class="absolute top-1/3 left-1/2 -translate-x-1/2 w-[500px] h-[500px] bg-brand-lightPurple/10 rounded-full blur-[130px] pointer-events-none"></div>
+
+        <div class="max-w-4xl mx-auto relative z-10">
+            
+            <!-- Badge -->
+            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-brand-purple/80 border border-brand-lightPurple/30 text-brand-softPurple text-xs md:text-sm font-medium tracking-wide mb-6">
+                <i class="fa-solid fa-seedling text-brand-accentYellow"></i>
+                <span>Un espacio para aprender, crecer y construir con propósito</span>
+            </div>
+
+            <!-- Headline -->
+            <h1 class="font-heading font-black text-3xl sm:text-5xl md:text-6xl leading-tight tracking-tight mb-6 text-white">
+                Construye el futuro que mereces sin descuidar lo que ya amas
+            </h1>
+
+            <!-- Subheadline -->
+            <p class="text-base sm:text-lg md:text-xl text-purple-200 max-w-2xl mx-auto mb-10 font-normal leading-relaxed">
+                El mundo ya cambió. Hoy miles de personas buscan una alternativa diferente que las ayude recuperar su tiempo, aprender habilidades reales y construir un proyecto propio sin dejar su tranquilidad atrás.
+            </p>
+
+            <!-- Main CTA Button -->
+            <div class="max-w-md mx-auto mb-4">
+                <a href="https://wa.me/56951742785?text=Hola%20niko,%20quiero%20empezar%20con%20network%20marketing,%20Mi%20nombre%20es%20" 
+                   target="_blank"
+                   class="btn-pulse flex flex-col items-center justify-center bg-gradient-to-r from-brand-accentYellow via-amber-400 to-brand-accentYellow text-brand-dark font-black text-base sm:text-xl py-4 px-6 rounded-2xl shadow-xl hover:brightness-105 transition-all">
+                    <div class="flex items-center gap-3">
+                        <i class="fa-brands fa-whatsapp text-2xl sm:text-3xl text-emerald-900"></i>
+                        <span>Hablemos por WhatsApp</span>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Section 2: Monetización de Redes Sociales (Purple background) -->
+    <section class="bg-white py-16 px-4 md:px-8 border-y border-blue-100">
+        <div class="max-w-5xl mx-auto">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span class="text-yellow-600 text-xs font-bold uppercase tracking-widest block mb-2">TENDENCIA MUNDIAL</span>
+                <h2 class="font-heading font-black text-2xl sm:text-4xl text-blue-900 mb-4">Monetización de Redes Sociales: Un Campo en Auge</h2>
+                <p class="text-blue-700 text-sm sm:text-base leading-relaxed">
+                    Hoy en día, las plataformas digitales ya no son solo entretenimiento; se han convertido en vehículos reales de generación de ingresos. Aprender a monetizar tu presencia digital te permite construir una fuente sólida, y con nuestro sistema puedes comenzar a generar desde los <strong class="text-yellow-600">$350 USD mensuales</strong>, escalando conforme desarrollas tus habilidades y ayudas a más personas.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-blue-50 border border-blue-100 shadow-sm p-6 rounded-2xl">
+                    <div class="w-12 h-12 rounded-xl bg-brand-lightPurple/20 flex items-center justify-center text-brand-softPurple mb-4 text-xl">
+                        <i class="fa-solid fa-mobile-screen"></i>
+                    </div>
+                    <h3 class="font-heading font-bold text-lg text-blue-900 mb-2">Conectividad Digital</h3>
+                    <p class="text-blue-700 text-sm">Transforma tu tiempo frente al teléfono en una herramienta de aprendizaje y creación de valor a nivel global.</p>
+                </div>
+
+                <div class="bg-blue-50 border border-blue-100 shadow-sm p-6 rounded-2xl">
+                    <div class="w-12 h-12 rounded-xl bg-yellow-600/20 flex items-center justify-center text-yellow-600 mb-4 text-xl">
+                        <i class="fa-solid fa-chart-line"></i>
+                    </div>
+                    <h3 class="font-heading font-bold text-lg text-blue-900 mb-2">Ingresos desde $350 USD</h3>
+                    <p class="text-blue-700 text-sm">Estructuras claras de ingresos residuales que inician desde los $350 USD mensuales, ideales para diversificar tu economía.</p>
+                </div>
+
+                <div class="bg-blue-50 border border-blue-100 shadow-sm p-6 rounded-2xl">
+                    <div class="w-12 h-12 rounded-xl bg-brand-electricBlue/20 flex items-center justify-center text-brand-softBlue mb-4 text-xl">
+                        <i class="fa-solid fa-people-group"></i>
+                    </div>
+                    <h3 class="font-heading font-bold text-lg text-blue-900 mb-2">Comunidad y Soporte</h3>
+                    <p class="text-blue-700 text-sm">No caminas solo. Cuentas con guías experimentadas, laboratorios de marketing y un sistema paso a paso.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3: El Vehículo Hacia la Libertad y Crecimiento Personal (Dark background) -->
+    <section class="bg-section-dark py-16 px-4 md:px-8 border-t border-purple-900/40">
+        <div class="max-w-4xl mx-auto text-center">
+            <span class="text-brand-accentYellow text-xs font-bold uppercase tracking-widest block mb-2">VISIÓN A LARGO PLAZO</span>
+            <h2 class="font-heading font-black text-2xl sm:text-4xl text-white mb-6">El Vehículo para Construir Libertad con el Paso de los Años</h2>
+            <p class="text-purple-200 text-base sm:text-lg leading-relaxed mb-8">
+                Como señalan grandes referentes de la economía moderna y autores de renombre internacional como <strong>Robert Kiyosaki</strong>, el network marketing representa una de las escuelas de negocios más accesibles del mundo real. No se trata de enriquecimiento rápido, sino de construir un activo financiero y una mentalidad empresarial sólida que perdure y crezca con el paso de los años.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-left mb-10">
+                <div class="glass-card p-6 rounded-2xl">
+                    <div class="text-brand-accentYellow font-bold text-lg mb-2 flex items-center gap-2">
+                        <i class="fa-solid fa-brain"></i>
+                        <span>Crecimiento Personal</span>
+                    </div>
+                    <p class="text-purple-200 text-sm leading-relaxed">
+                        Este negocio te transforma internamente. Desarrollas liderazgo, inteligencia emocional, resiliencia y habilidades de comunicación que mejoran cada aspecto de tu vida personal y profesional.
+                    </p>
+                </div>
+
+                <div class="glass-card p-6 rounded-2xl">
+                    <div class="text-brand-accentYellow font-bold text-lg mb-2 flex items-center gap-2">
+                        <i class="fa-solid fa-clock-rotate-left"></i>
+                        <span>Construcción Paso a Paso</span>
+                    </div>
+                    <p class="text-purple-200 text-sm leading-relaxed">
+                        A diferencia del empleo tradicional donde cambias horas por dinero, aquí tienes un sistema de negocio que te genera tranquilidad y libertad de tiempo a mediano y largo plazo. Además de aumentar año a año tus ingresos.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 4: ¿Cómo funciona el Network Marketing? (White background) -->
+    <section class="bg-white py-16 px-4 md:px-8 border-t border-blue-100">
+        <div class="max-w-5xl mx-auto">
+            <div class="text-center max-w-3xl mx-auto mb-10">
+                <h2 class="font-heading font-black text-2xl sm:text-4xl text-blue-900 mb-6">¿Cómo funciona el Network Marketing?</h2>
+                <p class="text-blue-700 text-base leading-relaxed mb-4">
+                    Seguramente te ha pasado que siempre recomiendas una película en netflix, una marca de ropa, una marca de perfumes, un restaurant, hasta un médico, pero no recibes nada más que las gracias.
+                </p>
+                <p class="text-blue-700 text-base font-bold leading-relaxed mb-8">
+                    Pero ¿qué pasaría si hoy comenzaras a aprender un sistema que te pague por recomendaciones? ¡Ahí cambia toda la historia!
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+                <div class="bg-blue-50 border border-blue-100 shadow-sm p-8 rounded-3xl">
+                    <p class="text-blue-700 text-sm sm:text-base leading-relaxed mb-4">
+                        En simples palabras, es un modelo de negocios basado en la venta de productos o servicios que ya están creados, ya funcionan y están aprobados por la sociedad.
+                    </p>
+                    <p class="text-blue-700 text-sm sm:text-base leading-relaxed mb-6">
+                        Hoy las empresas no quieren empresas de marketing, buscan personas reales que consuman sus productos y/o servicios y que los recomienden, a cambio de comisiones de ganancias.
+                    </p>
+                    
+                    <div class="p-4 rounded-xl bg-blue-100/50 border border-blue-200 text-sm text-blue-800 font-medium leading-relaxed">
+                        <span class="block mb-2 text-yellow-600 font-bold uppercase text-xs">El Proceso</span>
+                        Producto/Servicio <i class="fa-solid fa-arrow-right mx-1 text-xs"></i> Recomendación <i class="fa-solid fa-arrow-right mx-1 text-xs"></i> Cliente <i class="fa-solid fa-arrow-right mx-1 text-xs"></i> Ventas <i class="fa-solid fa-arrow-right mx-1 text-xs"></i> Comisiones/Ganancias <i class="fa-solid fa-arrow-right mx-1 text-xs"></i> Ayudo a otras personas
+                    </div>
+                </div>
+
+                <div class="bg-blue-900 p-8 rounded-3xl border border-blue-800 text-white shadow-lg">
+                    <i class="fa-solid fa-quote-left text-3xl text-yellow-500 mb-4 opacity-50"></i>
+                    <p class="italic text-blue-100 text-base leading-relaxed mb-4">
+                        "Lejos de cualquier mito, el network marketing es un modelo de distribución legítimo que lleva décadas desarrollándose con éxito en todo el mundo. Grandes corporativos y empresas globales como Amway, Natura, Herbalife, Nu Skin, utilizan este mismo principio de recomendación de personas sin experiencia ni conocimiento previo."
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 5: Pasos para Comenzar (Purple background) -->
+    <section class="bg-section-dark py-16 px-4 md:px-8 border-t border-purple-900/40">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-12">
+                <span class="text-brand-accentYellow text-xs font-bold uppercase tracking-widest block mb-2">TU PRÓXIMO PASO</span>
+                <h2 class="font-heading font-black text-2xl sm:text-4xl text-white mb-3">¿Cómo Puedes Iniciar?</h2>
+                <p class="text-purple-200 text-sm sm:text-base">Un proceso simple, transparente y guiado desde el primer momento.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+                <!-- Step 1 -->
+                <div class="glass-card p-6 rounded-2xl relative">
+                    <div class="absolute -top-4 -left-4 w-10 h-10 rounded-full bg-brand-accentYellow text-brand-dark font-black flex items-center justify-center text-lg shadow-lg">1</div>
+                    <h3 class="font-heading font-bold text-lg text-white mb-2 mt-2">Escríbeme por WhatsApp</h3>
+                    <p class="text-purple-300 text-sm leading-relaxed">Te ayudaré a encontrar la mejor opción que se adapte a lo que andas buscando.</p>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="glass-card p-6 rounded-2xl relative">
+                    <div class="absolute -top-4 -left-4 w-10 h-10 rounded-full bg-brand-accentYellow text-brand-dark font-black flex items-center justify-center text-lg shadow-lg">2</div>
+                    <h3 class="font-heading font-bold text-lg text-white mb-2 mt-2">Conoce la Información sin Compromiso</h3>
+                    <p class="text-purple-300 text-sm leading-relaxed">Te compartiré detalles claros de cómo funciona el sistema, el equipo de apoyo y las herramientas a las que puedes acceder.</p>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="glass-card p-6 rounded-2xl relative">
+                    <div class="absolute -top-4 -left-4 w-10 h-10 rounded-full bg-brand-accentYellow text-brand-dark font-black flex items-center justify-center text-lg shadow-lg">3</div>
+                    <h3 class="font-heading font-bold text-lg text-white mb-2 mt-2">Aprende a tu Propio Ritmo</h3>
+                    <p class="text-purple-300 text-sm leading-relaxed">Si resuena contigo y ves valor, avanzamos juntos paso a paso con acompañamiento personalizado.</p>
+                </div>
+            </div>
+
+            <!-- Final CTA Button Box -->
+            <div class="text-center">
+                <a href="https://wa.me/56951742785?text=Hola%20niko,%20quiero%20empezar%20con%20network%20marketing,%20Mi%20nombre%20es%20" 
+                   target="_blank"
+                   class="btn-pulse inline-flex items-center gap-3 bg-gradient-to-r from-brand-accentYellow via-amber-400 to-brand-accentYellow text-brand-dark font-black text-lg py-4 px-8 rounded-2xl shadow-2xl hover:brightness-105 transition-all">
+                    <i class="fa-brands fa-whatsapp text-2xl text-emerald-900"></i>
+                    <span>Escríbeme Directo por WhatsApp</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-section-dark py-8 px-4 text-center border-t border-purple-900/50">
+        <div class="max-w-7xl mx-auto text-xs text-purple-400">
+            <p>&copy; 2026 Comunidad de Embajadores. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/56951742785?text=Hola%20niko,%20quiero%20m%C3%A1s%20informaci%C3%B3n%20del%20Network%20Marketing.%20Mi%20nombre%20es%20" 
+       target="_blank"
+       class="fixed bottom-6 right-6 bg-emerald-500 hover:bg-emerald-600 text-white w-14 h-14 rounded-full flex items-center justify-center text-3xl shadow-2xl hover:scale-110 transition-transform z-50 animate-bounce">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+</body>
+</html>

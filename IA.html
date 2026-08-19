@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>AI Creators Academy | Domina la Inteligencia Artificial Desde Cero</title>
+    <meta name="description" content="La única academia que te enseña a ser más creativo y más eficiente usando Inteligencia Artificial. Diseñada para networkers, emprendedores y creadores.">
+    <meta name="keywords" content="inteligencia artificial, automatizacion de contenidos, curso ia desde cero, prompts optimizados, productividad 10x, networkers, emprendedores">
+    <meta name="author" content="AI Creators Academy">
+    <meta name="robots" content="index, follow">
+
+    <!-- Meta Pixel Code (Simulated Architecture) -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1234567890123456'); // ID de prueba cargado para arquitectura
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1234567890123456&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+
+    <!-- Fonts and Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Tailwind Custom Configuration with Warm Coffee, Orange, Yellow & White Palette -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        darkBg: '#120B08',        /* Café muy oscuro */
+                        darkCard: '#1C120C',      /* Café profundo */
+                        darkBorder: '#362318',    /* Borde café */
+                        lightBg: '#FFF9F2',       /* Blanco cálido */
+                        lightCard: '#FFFFFF',     /* Blanco puro */
+                        lightBorder: '#EFE3D3',   /* Borde claro suave */
+                        brandOrange: '#FF6B00',   /* Naranjo vibrante */
+                        brandOrangeDark: '#D95200',
+                        brandYellow: '#FFB800',   /* Amarillo brillante */
+                        brandBrown: '#4A2E1B',    /* Café acentuado */
+                        waGreen: '#25D366',       /* Verde WhatsApp */
+                        waGreenHover: '#1DA851'
+                    },
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                        display: ['Space Grotesk', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Custom Style Overrides -->
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            overflow-x: hidden;
+        }
+
+        .glow-orange {
+            box-shadow: 0 0 35px -5px rgba(255, 107, 0, 0.35);
+        }
+        .glow-yellow {
+            box-shadow: 0 0 35px -5px rgba(255, 184, 0, 0.3);
+        }
+        
+        .gradient-text-orange {
+            background: linear-gradient(135deg, #FF9E00 0%, #FF6B00 50%, #FFB800 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .gradient-text-brown {
+            background: linear-gradient(135deg, #4A2E1B 0%, #FF6B00 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /* Pulse animation for CTAs */
+        @keyframes customPulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.02); }
+        }
+        .animate-cta {
+            animation: customPulse 2.5s infinite ease-in-out;
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-brandOrange selection:text-white">
+
+    <!-- MAIN CONTAINER -->
+    <main class="relative overflow-hidden">
+
+        <!-- ========================================== -->
+        <!-- SECTION 1: HERO (OSCURO)                  -->
+        <!-- ========================================== -->
+        <section class="bg-darkBg text-white pt-12 pb-20 px-4 sm:px-6 lg:px-8 border-b border-darkBorder relative">
+            
+            <!-- Ambient Glows -->
+            <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-gradient-to-b from-brandOrange/20 via-brandYellow/10 to-transparent blur-[120px] pointer-events-none -z-10"></div>
+
+            <div class="max-w-5xl mx-auto text-center">
+                
+                <!-- Logo Title Badge -->
+                <div class="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-darkCard border border-brandOrange/40 text-xs sm:text-sm font-semibold tracking-wider uppercase text-amber-300 mb-8 shadow-md">
+                    <i class="fa-solid fa-sparkles text-brandYellow"></i>
+                    <span>AI CREATORS</span>
+                </div>
+
+                <!-- Headline -->
+                <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold font-display tracking-tight text-white leading-[1.15] max-w-4xl mx-auto mb-6">
+                    Aprende a utilizar <span class="gradient-text-orange">Inteligencia Artificial</span> para trabajar de una manera diferente.
+                </h1>
+                
+                <!-- New Paragraph -->
+                <p class="text-lg sm:text-xl text-gray-300 mb-6 max-w-3xl mx-auto font-light leading-relaxed">
+                    La Inteligencia Artificial ya está cambiando la forma en que las personas crean, trabajan y desarrollan nuevas ideas.<br class="hidden sm:block">
+                    La pregunta ya no es solamente si vas a utilizarla.<br class="hidden sm:block">
+                    <strong class="text-brandYellow font-semibold">La pregunta es ¿Cuándo vas a aprender a hacerlo bien?</strong>
+                </p>
+
+                <!-- Subheadline -->
+                <div class="bg-darkCard/90 border border-brandOrange/30 p-6 sm:p-8 rounded-2xl max-w-3xl mx-auto mb-8 shadow-xl backdrop-blur-sm">
+                    <p class="text-base sm:text-lg text-gray-200 font-light leading-relaxed">
+                        <strong class="text-brandYellow font-semibold">IA CREATORS</strong> diseñada para personas sin conocimiento, networkers, emprendedores, dueños de negocio y creadores que quieren mejorar su presencia digital, automatizar procesos para ahorrar tiempo sin depender de diseñadores, editores o expertos técnicos.
+                    </p>
+                </div>
+
+                <!-- Social Proof Bar -->
+                <div class="flex flex-wrap items-center justify-center gap-6 text-sm text-gray-300 mb-10">
+                    <div class="flex items-center gap-2 bg-black/40 px-4 py-2 rounded-full border border-white/10">
+                        <div class="flex -space-x-2">
+                            <img class="w-8 h-8 rounded-full border-2 border-darkBg" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80" alt="Usuario">
+                            <img class="w-8 h-8 rounded-full border-2 border-darkBg" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80" alt="Usuario">
+                            <img class="w-8 h-8 rounded-full border-2 border-darkBg" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=100&q=80" alt="Usuario">
+                        </div>
+                        <span class="text-white font-bold">+3.257 personas potenciando sus habilidades y negocios</span>
+                    </div>
+                    <div class="flex items-center gap-1 text-brandYellow bg-black/40 px-4 py-2 rounded-full border border-white/10">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span class="text-gray-200 font-medium ml-1">4.9/5 valoración</span>
+                    </div>
+                </div>
+
+                <!-- Main CTA -->
+                <div class="max-w-md mx-auto">
+                    <a href="https://wa.me/56951742785?text=Hola%20niko%2C%20quiero%20empezar%20aprender%20inteligencia%20artificial%2C%20Mi%20nombre%20es" 
+                       target="_blank" 
+                       rel="noopener noreferrer"
+                       class="animate-cta group w-full inline-flex items-center justify-center gap-3 bg-waGreen hover:bg-waGreenHover text-white font-extrabold text-lg sm:text-xl py-5 px-8 rounded-2xl shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                        <i class="fa-brands fa-whatsapp text-2xl group-hover:scale-110 transition-transform"></i>
+                        <span>¡QUIERO EMPEZAR AHORA MISMO!</span>
+                        <i class="fa-solid fa-arrow-right text-lg group-hover:translate-x-1 transition-transform"></i>
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ========================================== -->
+        <!-- SECTION 2: CONTEXTO (CLARO)               -->
+        <!-- ========================================== -->
+        <section class="bg-lightBg text-darkBg py-16 sm:py-20 px-4 sm:px-6 lg:px-8 border-b border-lightBorder">
+            <div class="max-w-4xl mx-auto text-center">
+                
+                <h2 class="text-2xl sm:text-4xl font-extrabold text-brandBrown font-display leading-tight mb-8">
+                    Probablemente ya hayas experimentado algo parecido.
+                </h2>
+                
+                <div class="bg-lightCard p-8 sm:p-10 rounded-2xl border border-lightBorder shadow-md text-left max-w-3xl mx-auto">
+                    <p class="text-lg text-gray-700 mb-4">
+                        Abres ChatGPT, pruebas un prompt, obtienes una respuesta. después intentas otra cosa.
+                    </p>
+                    <p class="text-lg text-gray-700 mb-6">
+                        Y de repente... no sabes exactamente qué preguntar, cómo obtener mejores resultados o cómo llevarlo a algo que realmente puedas utilizar en tu día a día.
+                    </p>
+                    <div class="border-l-4 border-brandOrange pl-4 py-2">
+                        <p class="text-xl font-bold text-brandBrown">
+                            El problema no es tener acceso a la Inteligencia Artificial, es saber utilizarla.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ========================================== -->
+        <!-- SECTION 3: CRITERIO (OSCURO)              -->
+        <!-- ========================================== -->
+        <section class="bg-darkBg text-white py-16 sm:py-20 px-4 sm:px-6 lg:px-8 border-b border-darkBorder">
+            <div class="max-w-4xl mx-auto">
+                
+                <div class="text-center mb-10">
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-white font-display">
+                        La IA no reemplaza el criterio, pero si lo potencia.
+                    </h2>
+                    <p class="text-gray-300 mt-4 text-lg">
+                        Una herramienta con IA puede darte una excelente respuesta, pero tú necesitas:
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-10 max-w-3xl mx-auto">
+                    <div class="bg-darkCard border border-darkBorder p-4 rounded-xl flex items-center gap-3">
+                        <i class="fa-solid fa-check text-brandOrange"></i>
+                        <span class="font-semibold text-gray-200">Saber qué pedir.</span>
+                    </div>
+                    <div class="bg-darkCard border border-darkBorder p-4 rounded-xl flex items-center gap-3">
+                        <i class="fa-solid fa-check text-brandOrange"></i>
+                        <span class="font-semibold text-gray-200">Cómo pedirlo.</span>
+                    </div>
+                    <div class="bg-darkCard border border-darkBorder p-4 rounded-xl flex items-center gap-3">
+                        <i class="fa-solid fa-check text-brandOrange"></i>
+                        <span class="font-semibold text-gray-200">Cómo evaluarlo.</span>
+                    </div>
+                    <div class="bg-darkCard border border-darkBorder p-4 rounded-xl flex items-center gap-3">
+                        <i class="fa-solid fa-check text-brandOrange"></i>
+                        <span class="font-semibold text-gray-200">Cómo mejorarlo.</span>
+                    </div>
+                    <div class="bg-darkCard border border-darkBorder p-4 rounded-xl flex items-center gap-3 sm:col-span-2 md:col-span-2">
+                        <i class="fa-solid fa-check text-brandOrange"></i>
+                        <span class="font-semibold text-gray-200">Y cómo integrarlo dentro de un proceso real.</span>
+                    </div>
+                </div>
+
+                <div class="text-center max-w-3xl mx-auto bg-brandOrange/10 border border-brandOrange/20 p-6 rounded-xl">
+                    <p class="text-lg text-amber-100 italic">
+                        "Por eso la formación no se centra únicamente en enseñarte herramientas.<br>
+                        Busca ayudarte a desarrollar una forma más eficiente de trabajar con ellas."
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ========================================== -->
+        <!-- SECTION 4: COMO FUNCIONA (CLARO)          -->
+        <!-- ========================================== -->
+        <section class="bg-lightBg text-darkBg py-16 sm:py-20 px-4 sm:px-6 lg:px-8 border-b border-lightBorder">
+            <div class="max-w-5xl mx-auto text-center">
+                
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-brandBrown font-display mb-6">
+                    ¿Cómo funciona realmente la Inteligencia Artificial?
+                </h2>
+                <p class="text-lg text-gray-700 max-w-3xl mx-auto mb-10">
+                    La IA permite utilizar sistemas capaces de procesar información, reconocer patrones, generar contenido y asistir en diferentes tareas.
+                </p>
+                
+                <h3 class="text-xl font-bold text-brandBrown mb-6">En la práctica, una persona puede utilizar IA para:</h3>
+                
+                <!-- Process Flow -->
+                <div class="flex flex-wrap items-center justify-center gap-2 sm:gap-4 mb-12 text-sm sm:text-base font-bold text-white">
+                    <div class="bg-brandBrown px-4 py-2 rounded-lg shadow-sm">Preguntar</div>
+                    <i class="fa-solid fa-arrow-right text-brandOrange"></i>
+                    <div class="bg-brandBrown px-4 py-2 rounded-lg shadow-sm">Analizar</div>
+                    <i class="fa-solid fa-arrow-right text-brandOrange"></i>
+                    <div class="bg-brandBrown px-4 py-2 rounded-lg shadow-sm">Crear</div>
+                    <i class="fa-solid fa-arrow-right text-brandOrange"></i>
+                    <div class="bg-brandBrown px-4 py-2 rounded-lg shadow-sm">Automatizar</div>
+                    <i class="fa-solid fa-arrow-right text-brandOrange"></i>
+                    <div class="bg-brandBrown px-4 py-2 rounded-lg shadow-sm">Mejorar</div>
+                </div>
+
+                <h3 class="text-xl font-bold text-brandBrown mb-6">Por ejemplo:</h3>
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-3 max-w-4xl mx-auto">
+                    <div class="bg-white border border-amber-200 py-3 px-2 rounded-xl text-sm font-semibold text-gray-700 shadow-sm">Investigar información</div>
+                    <div class="bg-white border border-amber-200 py-3 px-2 rounded-xl text-sm font-semibold text-gray-700 shadow-sm">Crear contenido</div>
+                    <div class="bg-white border border-amber-200 py-3 px-2 rounded-xl text-sm font-semibold text-gray-700 shadow-sm">Analizar documentos</div>
+                    <div class="bg-white border border-amber-200 py-3 px-2 rounded-xl text-sm font-semibold text-gray-700 shadow-sm">Generar imágenes</div>
+                    <div class="bg-white border border-amber-200 py-3 px-2 rounded-xl text-sm font-semibold text-gray-700 shadow-sm">Escribir</div>
+                    <div class="bg-white border border-amber-200 py-3 px-2 rounded-xl text-sm font-semibold text-gray-700 shadow-sm">Organizar ideas</div>
+                    <div class="bg-white border border-amber-200 py-3 px-2 rounded-xl text-sm font-semibold text-gray-700 shadow-sm">Automatizar tareas</div>
+                    <div class="bg-white border border-amber-200 py-3 px-2 rounded-xl text-sm font-semibold text-gray-700 shadow-sm">Desarrollar procesos</div>
+                    <div class="bg-white border border-amber-200 py-3 px-2 rounded-xl text-sm font-semibold text-gray-700 shadow-sm sm:col-span-3 md:col-span-2">Mejorar productividad</div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ========================================== -->
+        <!-- SECTION 5: RECUPERAR HORAS (OSCURO)       -->
+        <!-- ========================================== -->
+        <section class="bg-darkBg text-white py-16 sm:py-20 px-4 sm:px-6 lg:px-8 border-b border-darkBorder">
+            <div class="max-w-4xl mx-auto text-center">
+                
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white font-display mb-8">
+                    Imagina recuperar horas que hoy utilizas en tareas repetitivas como:
+                </h2>
+                
+                <div class="flex flex-wrap justify-center gap-4 mb-10">
+                    <span class="px-6 py-2 bg-darkCard border border-brandOrange/40 rounded-full text-brandYellow font-semibold">Redactar.</span>
+                    <span class="px-6 py-2 bg-darkCard border border-brandOrange/40 rounded-full text-brandYellow font-semibold">Investigar.</span>
+                    <span class="px-6 py-2 bg-darkCard border border-brandOrange/40 rounded-full text-brandYellow font-semibold">Organizar.</span>
+                    <span class="px-6 py-2 bg-darkCard border border-brandOrange/40 rounded-full text-brandYellow font-semibold">Crear.</span>
+                    <span class="px-6 py-2 bg-darkCard border border-brandOrange/40 rounded-full text-brandYellow font-semibold">Analizar.</span>
+                    <span class="px-6 py-2 bg-darkCard border border-brandOrange/40 rounded-full text-brandYellow font-semibold">Planificar.</span>
+                </div>
+
+                <div class="max-w-3xl mx-auto text-lg text-gray-300 px-4 border-l-4 border-brandYellow text-left">
+                    <p class="italic">
+                        La IA puede convertirse en una herramienta que te ayude a hacer muchas de estas tareas de manera más eficiente y para lograrlo necesitas aprender a utilizarla correctamente.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ========================================== -->
+        <!-- SECTION 6: QUÉ APRENDER (CLARO)           -->
+        <!-- ========================================== -->
+        <section class="bg-lightBg text-darkBg py-16 sm:py-20 px-4 sm:px-6 lg:px-8 border-b border-lightBorder">
+            <div class="max-w-5xl mx-auto">
+                
+                <div class="text-center max-w-3xl mx-auto mb-12">
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-brandBrown font-display">
+                        Entonces quizás te preguntes... ¿Qué puedo aprender?
+                    </h2>
+                    <p class="text-gray-700 mt-4 text-lg">
+                        Un programa integral diseñado para transformar tus tareas diarias, desde las bases hasta la automatización avanzada.
+                    </p>
+                </div>
+
+                <div class="bg-white rounded-2xl border border-lightBorder shadow-md p-8 sm:p-10">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-y-4 gap-x-8 text-gray-800">
+                        <div class="flex items-start gap-3">
+                            <i class="fa-solid fa-circle-check text-brandOrange mt-1"></i>
+                            <span class="font-medium">Cómo utilizar herramientas de Inteligencia Artificial desde cero.</span>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <i class="fa-solid fa-circle-check text-brandOrange mt-1"></i>
+                            <span class="font-medium">Cómo crear mejores instrucciones y prompts.</span>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <i class="fa-solid fa-circle-check text-brandOrange mt-1"></i>
+                            <span class="font-medium">Cómo automatizar determinadas tareas.</span>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <i class="fa-solid fa-circle-check text-brandOrange mt-1"></i>
+                            <span class="font-medium">Cómo generar contenido.</span>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <i class="fa-solid fa-circle-check text-brandOrange mt-1"></i>
+                            <span class="font-medium">Cómo investigar y organizar información.</span>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <i class="fa-solid fa-circle-check text-brandOrange mt-1"></i>
+                            <span class="font-medium">Cómo utilizar IA para productividad.</span>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <i class="fa-solid fa-circle-check text-brandOrange mt-1"></i>
+                            <span class="font-medium">Cómo incorporarla a proyectos y negocios.</span>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <i class="fa-solid fa-circle-check text-brandOrange mt-1"></i>
+                            <span class="font-medium">Cómo crear páginas de ventas.</span>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <i class="fa-solid fa-circle-check text-brandOrange mt-1"></i>
+                            <span class="font-medium">Cómo crear agentes que trabajen por ti.</span>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <i class="fa-solid fa-circle-check text-brandOrange mt-1"></i>
+                            <span class="font-medium">Cómo crear avatar de IA para crear contenido en redes sociales.</span>
+                        </div>
+                        <div class="flex items-start gap-3 md:col-span-2">
+                            <i class="fa-solid fa-circle-check text-brandOrange mt-1"></i>
+                            <span class="font-medium">Entre otros.</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ========================================== -->
+        <!-- SECTION 7: PARA TI SI (OSCURO)            -->
+        <!-- ========================================== -->
+        <section class="bg-darkBg text-white py-16 sm:py-20 px-4 sm:px-6 lg:px-8 border-b border-darkBorder">
+            <div class="max-w-4xl mx-auto">
+                
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-white font-display">
+                        Esto es Para ti si:
+                    </h2>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-3xl mx-auto">
+                    <div class="bg-darkCard border border-darkBorder p-5 rounded-xl flex items-start gap-4 hover:border-brandYellow/50 transition-colors">
+                        <div class="w-8 h-8 rounded-full bg-brandYellow/20 flex items-center justify-center shrink-0">
+                            <i class="fa-solid fa-star text-brandYellow text-sm"></i>
+                        </div>
+                        <span class="font-medium text-gray-200 mt-1">Quieres comenzar a utilizar IA desde cero.</span>
+                    </div>
+                    <div class="bg-darkCard border border-darkBorder p-5 rounded-xl flex items-start gap-4 hover:border-brandYellow/50 transition-colors">
+                        <div class="w-8 h-8 rounded-full bg-brandYellow/20 flex items-center justify-center shrink-0">
+                            <i class="fa-solid fa-star text-brandYellow text-sm"></i>
+                        </div>
+                        <span class="font-medium text-gray-200 mt-1">Ya utilizas algunas herramientas pero quieres mejorar.</span>
+                    </div>
+                    <div class="bg-darkCard border border-darkBorder p-5 rounded-xl flex items-start gap-4 hover:border-brandYellow/50 transition-colors">
+                        <div class="w-8 h-8 rounded-full bg-brandYellow/20 flex items-center justify-center shrink-0">
+                            <i class="fa-solid fa-star text-brandYellow text-sm"></i>
+                        </div>
+                        <span class="font-medium text-gray-200 mt-1">Eres emprendedor/a.</span>
+                    </div>
+                    <div class="bg-darkCard border border-darkBorder p-5 rounded-xl flex items-start gap-4 hover:border-brandYellow/50 transition-colors">
+                        <div class="w-8 h-8 rounded-full bg-brandYellow/20 flex items-center justify-center shrink-0">
+                            <i class="fa-solid fa-star text-brandYellow text-sm"></i>
+                        </div>
+                        <span class="font-medium text-gray-200 mt-1">Trabajas por tu cuenta.</span>
+                    </div>
+                    <div class="bg-darkCard border border-darkBorder p-5 rounded-xl flex items-start gap-4 hover:border-brandYellow/50 transition-colors">
+                        <div class="w-8 h-8 rounded-full bg-brandYellow/20 flex items-center justify-center shrink-0">
+                            <i class="fa-solid fa-star text-brandYellow text-sm"></i>
+                        </div>
+                        <span class="font-medium text-gray-200 mt-1">Quieres aumentar tu productividad.</span>
+                    </div>
+                    <div class="bg-darkCard border border-darkBorder p-5 rounded-xl flex items-start gap-4 hover:border-brandYellow/50 transition-colors">
+                        <div class="w-8 h-8 rounded-full bg-brandYellow/20 flex items-center justify-center shrink-0">
+                            <i class="fa-solid fa-star text-brandYellow text-sm"></i>
+                        </div>
+                        <span class="font-medium text-gray-200 mt-1">Quieres desarrollar nuevas habilidades digitales.</span>
+                    </div>
+                    <div class="bg-darkCard border border-darkBorder p-5 rounded-xl flex items-start gap-4 hover:border-brandYellow/50 transition-colors">
+                        <div class="w-8 h-8 rounded-full bg-brandYellow/20 flex items-center justify-center shrink-0">
+                            <i class="fa-solid fa-star text-brandYellow text-sm"></i>
+                        </div>
+                        <span class="font-medium text-gray-200 mt-1">Quieres entender cómo aprovechar esta tecnología.</span>
+                    </div>
+                    <div class="bg-darkCard border border-darkBorder p-5 rounded-xl flex items-start gap-4 hover:border-brandYellow/50 transition-colors">
+                        <div class="w-8 h-8 rounded-full bg-brandYellow/20 flex items-center justify-center shrink-0">
+                            <i class="fa-solid fa-star text-brandYellow text-sm"></i>
+                        </div>
+                        <span class="font-medium text-gray-200 mt-1">Quieres incorporar la IA a tu trabajo o negocio, independiente a lo que te dediques.</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ========================================== -->
+        <!-- SECTION 8: PLANES (CLARO)                 -->
+        <!-- ========================================== -->
+        <section id="planes" class="bg-lightBg text-darkBg py-16 sm:py-20 px-4 sm:px-6 lg:px-8 border-b border-lightBorder">
+            <div class="max-w-5xl mx-auto">
+                
+                <div class="text-center mb-14">
+                    <h2 class="text-2xl sm:text-4xl font-extrabold text-brandBrown font-display mb-4">
+                        Si llegaste hasta aquí... Felicidades!! quiere decir que no quieres quedarte obsoleto.
+                    </h2>
+                    <p class="text-brandOrange font-bold text-lg sm:text-xl">
+                        Entonces... ¿Cómo puedes comenzar?
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch">
+                    
+                    <!-- PLAN 90 DÍAS -->
+                    <div class="bg-white rounded-3xl p-8 border border-lightBorder shadow-lg flex flex-col justify-between hover:shadow-xl transition-shadow">
+                        <div>
+                            <h3 class="text-xl sm:text-2xl font-bold text-brandBrown mb-6">FORMACIÓN EXPRESS DE 90 días.</h3>
+
+                            <div class="border-t border-lightBorder pt-6 mb-8">
+                                <h4 class="text-xs font-bold text-brandOrange uppercase tracking-wider mb-4">BENEFICIOS INCLUIDOS:</h4>
+                                <ul class="space-y-3.5 text-sm text-gray-700">
+                                    <li class="flex items-start gap-3">
+                                        <i class="fa-solid fa-check text-brandOrange mt-1"></i>
+                                        <span><strong>Formación completa:</strong> Nivel básico, intermedio y avanzado.</span>
+                                    </li>
+                                    <li class="flex items-start gap-3">
+                                        <i class="fa-solid fa-check text-brandOrange mt-1"></i>
+                                        <span>Clases en vivo y grabadas.</span>
+                                    </li>
+                                    <li class="flex items-start gap-3">
+                                        <i class="fa-solid fa-check text-brandOrange mt-1"></i>
+                                        <span>Guía paso a paso para comenzar desde cero.</span>
+                                    </li>
+                                    <li class="flex items-start gap-3">
+                                        <i class="fa-solid fa-check text-brandOrange mt-1"></i>
+                                        <span>Comunidad privada de apoyo y soporte.</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <a href="https://wa.me/56951742785?text=Hola%20Niko%2C%20quiero%20mas%20informacion%20del%20Plan%20de%2090%20dias%20de%20IA" 
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           class="w-full text-center py-4 px-6 rounded-xl bg-darkBorder hover:bg-neutral-800 text-white font-bold transition-all flex items-center justify-center gap-2 border border-transparent shadow-md">
+                            <i class="fa-brands fa-whatsapp text-lg"></i>
+                            <span>CONSULTAR PLAN 90 DÍAS</span>
+                        </a>
+                    </div>
+
+                    <!-- PLAN 360 DÍAS -->
+                    <div class="bg-gradient-to-b from-amber-50 to-white rounded-3xl p-8 border-2 border-brandOrange shadow-xl flex flex-col justify-between relative">
+                        
+                        <div class="absolute -top-3.5 right-6 bg-gradient-to-r from-brandOrange to-brandYellow text-black text-xs font-extrabold px-3 py-1 rounded-full uppercase tracking-wider shadow-md">
+                            RECOMENDADO
+                        </div>
+
+                        <div>
+                            <h3 class="text-xl sm:text-2xl font-bold text-brandBrown mb-6">FORMACIÓN COMPLETA DE 360 días.</h3>
+
+                            <div class="border-t border-amber-200 pt-6 mb-8">
+                                <h4 class="text-xs font-bold text-brandOrange uppercase tracking-wider mb-4">BENEFICIOS INCLUIDOS:</h4>
+                                <ul class="space-y-3.5 text-sm text-gray-800">
+                                    <li class="flex items-start gap-3">
+                                        <i class="fa-solid fa-star text-brandYellow mt-1"></i>
+                                        <span class="font-bold">Todo el Plan 90 Días +</span>
+                                    </li>
+                                    <li class="flex items-start gap-3">
+                                        <i class="fa-solid fa-check text-brandOrange mt-1"></i>
+                                        <span>Biblioteca de Prompts esenciales listos para aplicar.</span>
+                                    </li>
+                                    <li class="flex items-start gap-3">
+                                        <i class="fa-solid fa-check text-brandOrange mt-1"></i>
+                                        <span>Herramientas exclusivas de IA.</span>
+                                    </li>
+                                    <li class="flex items-start gap-3">
+                                        <i class="fa-solid fa-check text-brandOrange mt-1"></i>
+                                        <span>Actualizaciones constantes por 360 días de todo el contenido.</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <a href="https://wa.me/56951742785?text=Hola%20Niko%2C%20quiero%20mas%20informacion%20del%20Plan%20de%20360%20dias%20de%20IA." 
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           class="w-full text-center py-4 px-6 rounded-xl bg-gradient-to-r from-brandOrange to-brandOrangeDark hover:from-brandOrangeDark hover:to-brandOrange text-white font-extrabold transition-all shadow-xl flex items-center justify-center gap-2">
+                            <i class="fa-brands fa-whatsapp text-xl"></i>
+                            <span>OBTENER ACCESO 360 DÍAS</span>
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ========================================== -->
+        <!-- SECTION 9: DECISIÓN FINAL (OSCURO)        -->
+        <!-- ========================================== -->
+        <section class="bg-darkBg text-white py-16 sm:py-20 px-4 sm:px-6 lg:px-8 border-b border-darkBorder">
+            <div class="max-w-4xl mx-auto text-center">
+                
+                <div class="bg-darkCard p-8 sm:p-12 rounded-3xl border border-darkBorder shadow-2xl relative overflow-hidden">
+                    
+                    <h2 class="text-2xl sm:text-4xl font-extrabold text-white font-display mb-6">
+                        La tecnología ya está aquí, Ahora depende de ti aprender a utilizarla.
+                    </h2>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-left my-8">
+                        
+                        <!-- Camino 1 -->
+                        <div class="p-6 rounded-2xl bg-black/40 border border-white/10">
+                            <h4 class="text-base font-bold text-red-400 mb-2">CAMINO 1: Seguir como siempre</h4>
+                            <p class="text-xs sm:text-sm text-gray-400 leading-relaxed">
+                                Sigues gastando horas editando manualmente, improvisando con la IA sin estrategia y viendo cómo otros aprovechan la automatización.
+                            </p>
+                        </div>
+
+                        <!-- Camino 2 -->
+                        <div class="p-6 rounded-2xl bg-black/40 border border-brandYellow/30">
+                            <h4 class="text-base font-bold text-brandYellow mb-2">CAMINO 2: Aprender el sistema</h4>
+                            <p class="text-xs sm:text-sm text-gray-300 leading-relaxed">
+                                Te capacitas paso a paso, automatizas tu contenido, recuperas tu tiempo y multiplicas la visibilidad de tu negocio con IA.
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <a href="https://wa.me/56951742785?text=Hola%20Niko%2C%20tome%20la%20decision%20del%20Camino%202%20y%20quiero%20empezar%20con%20AI%20Creators" 
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="inline-flex items-center justify-center gap-3 w-full sm:w-auto bg-waGreen hover:bg-waGreenHover hover:scale-105 transition-all text-white font-extrabold text-lg sm:text-xl py-5 px-8 sm:px-10 rounded-2xl shadow-xl">
+                        <i class="fa-brands fa-whatsapp text-2xl"></i>
+                        <span>QUIERO APRENDER, NECESITO AYUDA.</span>
+                    </a>
+
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER (OSCURO) -->
+    <footer class="bg-black py-8 border-t border-darkBorder text-center text-xs text-gray-400 px-4">
+        <div class="max-w-5xl mx-auto space-y-3">
+            <p class="font-bold text-white text-sm">AI CREATORS ACADEMY</p>
+            <p class="text-gray-400">&copy; 2026 AI Creators Academy. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- STICKY FLOATING WHATSAPP BUTTON (MANTENIDO EN VERDE) -->
+    <div class="fixed bottom-5 right-5 z-50">
+        <a href="https://wa.me/56951742785?text=Hola%20niko%2C%20quiero%20empezar%20aprender%20de%20IA%2C%20Mi%20nombre%20es" 
+           target="_blank"
+           rel="noopener noreferrer"
+           class="w-14 h-14 bg-waGreen hover:bg-waGreenHover text-white rounded-full flex items-center justify-center text-3xl shadow-2xl transition-transform hover:scale-110 animate-bounce">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+    </div>
+
+</body>
+</html>
